@@ -306,7 +306,7 @@ gb.configure_column(field='Company Name', width=270)
 gb.configure_column(field='Sector', width=260)
 gb.configure_column(field='Industry', width=350)
 gb.configure_column(field='Prospect Status', width=270)
-gb.configure_column(field='Product', width=250)
+gb.configure_column(field='Product', width=240)
 
 gridOptions = gb.build()
 
