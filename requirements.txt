@@ -8,3 +8,4 @@ plotly
 yahooquery
 kaleido
 openai
+snowflake-connector-python
