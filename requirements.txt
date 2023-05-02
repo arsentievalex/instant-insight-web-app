@@ -1,4 +1,5 @@
 streamlit
+streamlit-aggrid==0.3.3
 pandas==1.5.0
 python-pptx~=0.6.21
 openpyxl
