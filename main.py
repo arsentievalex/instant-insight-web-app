@@ -472,7 +472,7 @@ elif submit and response_df is not None:
                         'use bullet points.'.format(name, selected_ticker)
 
                 # return response from GPT-3
-                gpt_swot = generate_gpt_response(input_swot, 1500)
+                gpt_swot = generate_gpt_response(input_swot, 1000)
                 swot_title = 'SWOT Analysis of {}'.format(name)
 
                 # initiate a dictionary of placeholders and values to replace
@@ -492,7 +492,7 @@ elif submit and response_df is not None:
                     format(name=name, product=product, ticker=selected_ticker, industry=industry)
 
                 # return response from GPT-3
-                gpt_value = generate_gpt_response(input_value, 1500)
+                gpt_value = generate_gpt_response(input_value, 1000)
 
                 vp_title = 'Value Proposition of {} for {}'.format(product, name)
 
