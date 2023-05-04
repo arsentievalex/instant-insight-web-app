@@ -15,6 +15,7 @@ import requests
 import os
 from io import BytesIO
 import openai
+import traceback
 
 
 # hide future warnings (caused by st_aggrid)
@@ -455,14 +456,18 @@ elif submit and response_df is not None:
                 os.remove('marketcap.png')
 
                 # plot ebitda
-                ebitda_df = get_financials(df=income_df, col_name='NormalizedEBITDA', metric_name='EBITDA')
-                ebitda_fig = plot_graph(df=ebitda_df, x='Year', y='EBITDA', title='EBITDA USD', name=name)
+                # adding try and except because some companies like banks don't have EBITDA data
+                try:
+                    ebitda_df = get_financials(df=income_df, col_name='NormalizedEBITDA', metric_name='EBITDA')
+                    ebitda_fig = plot_graph(df=ebitda_df, x='Year', y='EBITDA', title='EBITDA USD', name=name)
 
-                ebitda_fig.write_image("ebitda.png")
-                ebitda_im = 'ebitda.png'
+                    ebitda_fig.write_image("ebitda.png")
+                    ebitda_im = 'ebitda.png'
 
-                add_image(prs.slides[3], image=ebitda_im, left=Inches(7.3), width=Inches(4.5), top=Inches(3.8))
-                os.remove('ebitda.png')
+                    add_image(prs.slides[3], image=ebitda_im, left=Inches(7.3), width=Inches(4.5), top=Inches(3.8))
+                    os.remove('ebitda.png')
+                except:
+                    pass
 
                 ############################################################################################################
                 # create strengths and weaknesses slide
@@ -524,4 +529,7 @@ elif submit and response_df is not None:
             # if there is any error, display an error message
             except Exception as e:
                 with ui_container:
+                    #st.write(e)
+                    # get more details on error
+                    #st.write(traceback.format_exc())
                     st.error("Oops, something went wrong, please try again or select a different prospect.")
