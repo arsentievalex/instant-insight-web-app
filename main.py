@@ -167,6 +167,18 @@ def generate_gpt_response(gpt_input, max_tokens):
     return gpt_response
 
 
+def remove_special_char(text):
+    """function to remove special characters from a string. Takes a string as an argument and returns a string"""
+    # Check if the first character is a special character
+    if text[0] in ['.', ',']:
+        # Remove the first character and trim the string
+        return text[1:].strip()
+    else:
+        # Return the original string
+        return text
+
+
+
 # Get the data from Snowflake
 conn = get_database_session()
 df = get_data(conn)
@@ -480,9 +492,11 @@ elif submit and response_df is not None:
                 gpt_swot = generate_gpt_response(input_swot, 1000)
                 swot_title = 'SWOT Analysis of {}'.format(name)
 
+                gpt_swot_clean = remove_special_char(gpt_swot)
+
                 # initiate a dictionary of placeholders and values to replace
                 replaces_3 = {
-                    '{swot}': gpt_swot.strip(),
+                    '{swot}': gpt_swot_clean,
                     '{swot_title}': swot_title}
 
                 # run the function to replace placeholders with values
@@ -498,12 +512,14 @@ elif submit and response_df is not None:
 
                 # return response from GPT-3
                 gpt_value = generate_gpt_response(input_value, 1000)
+                # clean gpt response
+                gpt_value_clean = remove_special_char(gpt_value)
 
                 vp_title = 'Value Proposition of {} for {}'.format(product, name)
 
                 # initiate a dictionary of placeholders and values to replace
                 replaces_4 = {
-                    '{vp}': gpt_value.strip(),
+                    '{vp}': gpt_value_clean,
                     '{vp_title}': vp_title}
 
                 # run the function to replace placeholders with values
