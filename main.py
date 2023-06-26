@@ -1,0 +1,847 @@
+import pandas as pd
+import snowflake.connector
+import streamlit as st
+from st_aggrid import AgGrid
+from st_aggrid.grid_options_builder import GridOptionsBuilder
+from st_aggrid import GridUpdateMode, DataReturnMode
+import warnings
+from yahooquery import Ticker
+import plotly.express as px
+import plotly.graph_objects as go
+from pptx import Presentation
+from pptx.util import Inches
+from datetime import date
+from PIL import Image
+import requests
+import os
+from io import BytesIO
+from langchain.chat_models import ChatOpenAI
+from langchain.schema import HumanMessage, SystemMessage
+import traceback
+import re
+import ast
+
+
+# hide future warnings (caused by st_aggrid)
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+#set page layout and define basic variables
+st.set_page_config(layout="wide", page_icon='⚡', page_title="Instant Insight")
+path = os.path.dirname(__file__)
+today = date.today()
+
+
+# get Snowflake credentials from Streamlit secrets
+SNOWFLAKE_ACCOUNT = st.secrets["snowflake_credentials"]["SNOWFLAKE_ACCOUNT"]
+SNOWFLAKE_USER = st.secrets["snowflake_credentials"]["SNOWFLAKE_USER"]
+SNOWFLAKE_PASSWORD = st.secrets["snowflake_credentials"]["SNOWFLAKE_PASSWORD"]
+SNOWFLAKE_DATABASE = st.secrets["snowflake_credentials"]["SNOWFLAKE_DATABASE"]
+SNOWFLAKE_SCHEMA = st.secrets["snowflake_credentials"]["SNOWFLAKE_SCHEMA"]
+
+
+@st.cache_resource
+def get_database_session():
+    """Returns a database session object."""
+    return snowflake.connector.connect(
+        account=SNOWFLAKE_ACCOUNT,
+        user=SNOWFLAKE_USER,
+        password=SNOWFLAKE_PASSWORD,
+        database=SNOWFLAKE_DATABASE,
+        schema=SNOWFLAKE_SCHEMA,
+    )
+
+
+@st.cache_data
+def get_data(_conn):
+    """Returns a pandas DataFrame with the data from Snowflake."""
+    query = 'SELECT * FROM us_prospects;'
+    cur = conn.cursor()
+    cur.execute(query)
+
+    # Fetch the result as a pandas DataFrame
+    column_names = [col[0] for col in cur.description]
+    data = cur.fetchall()
+    df = pd.DataFrame(data, columns=column_names)
+
+    # Close the connection to Snowflake
+    cur.close()
+    conn.close()
+    return df
+
+
+def resize_image(url):
+    """function to resize logos while keeping aspect ratio. Accepts URL as an argument and return an image object"""
+
+    # Open the image file
+    image = Image.open(requests.get(url, stream=True).raw)
+
+    # if a logo is too high or too wide then make the background container twice as big
+    if image.height > 140:
+        container_width = 220 * 2
+        container_height = 140 * 2
+
+    elif image.width > 220:
+        container_width = 220 * 2
+        container_height = 140 * 2
+    else:
+        container_width = 220
+        container_height = 140
+
+    # Create a new image with the same aspect ratio as the original image
+    new_image = Image.new('RGBA', (container_width, container_height))
+
+    # Calculate the position to paste the image so that it is centered
+    x = (container_width - image.width) // 2
+    y = (container_height - image.height) // 2
+
+    # Paste the image onto the new image
+    new_image.paste(image, (x, y))
+    return new_image
+
+
+def add_image(slide, image, left, top, width):
+    """function to add an image to the PowerPoint slide and specify its position and width"""
+    slide.shapes.add_picture(image, left=left, top=top, width=width)
+
+
+# function to replace text in pptx first slide with selected filters
+def replace_text(replacements, slide):
+    """function to replace text on a PowerPoint slide. Takes dict of {match: replacement, ... } and replaces all matches"""
+    # Iterate through all shapes in the slide
+    for shape in slide.shapes:
+        for match, replacement in replacements.items():
+            if shape.has_text_frame:
+                if (shape.text.find(match)) != -1:
+                    text_frame = shape.text_frame
+                    for paragraph in text_frame.paragraphs:
+                        whole_text = "".join(run.text for run in paragraph.runs)
+                        whole_text = whole_text.replace(str(match), str(replacement))
+                        for idx, run in enumerate(paragraph.runs):
+                            if idx != 0:
+                                p = paragraph._p
+                                p.remove(run._r)
+                        if bool(paragraph.runs):
+                            paragraph.runs[0].text = whole_text
+
+
+def get_stock(ticker, period, interval):
+    """function to get stock data from Yahoo Finance. Takes ticker, period and interval as arguments and returns a DataFrame"""
+    hist = ticker.history(period=period, interval=interval)
+    hist = hist.reset_index()
+    # capitalize column names
+    hist.columns = [x.capitalize() for x in hist.columns]
+    return hist
+
+
+def plot_graph(df, x, y, title, name):
+    """function to plot a line graph. Takes DataFrame, x and y axis, title and name as arguments and returns a Plotly figure"""
+    fig = px.line(df, x=x, y=y, template='simple_white',
+                        title='<b>{} {}</b>'.format(name, title))
+    fig.update_traces(line_color='#A27D4F')
+    fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
+    return fig
+
+
+def peers_plot(df, name, metric):
+    """function to plot a bar chart with peers. Takes DataFrame, name, metric and ticker as arguments and returns a Plotly figure"""
+
+    # drop rows with missing metrics
+    df.dropna(subset=[metric], inplace=True)
+
+    df_sorted = df.sort_values(metric, ascending=False)
+
+    # iterate over the labels and add the colors to the color mapping dictionary, hightlight the selected ticker
+    color_map = {}
+    for label in df_sorted['Company Name']:
+        if label == name:
+            color_map[label] = '#A27D4F'
+        else:
+            color_map[label] = '#D9D9D9'
+
+    fig = px.bar(df_sorted, y='Company Name', x=metric, template='simple_white', color='Company Name',
+                        color_discrete_map=color_map,
+                        orientation='h',
+                        title='<b>{} {} vs Peers FY22</b>'.format(name, metric))
+    fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', showlegend=False, yaxis_title='')
+    return fig
+
+
+def get_financials(df, col_name, metric_name):
+    """function to get financial metrics from a DataFrame. Takes DataFrame, column name and metric name as arguments and returns a DataFrame"""
+    metric = df.loc[:, ['asOfDate', col_name]]
+    metric_df = pd.DataFrame(metric).reset_index()
+    metric_df.columns = ['Symbol', 'Year', metric_name]
+
+    return metric_df
+
+
+def generate_gpt_response(gpt_input, max_tokens):
+    """function to generate a response from GPT-3. Takes input and max tokens as arguments and returns a response"""
+    # Create an instance of the OpenAI class
+    chat = ChatOpenAI(openai_api_key=st.secrets["openai_credentials"]["API_KEY"], model='gpt-3.5-turbo-0613',
+                      temperature=0, max_tokens=max_tokens)
+
+    # Generate a response from the model
+    response = chat.predict_messages(
+        [SystemMessage(content='You are a helpful expert in finance, market and company research.'
+                               'You also have exceptional skills in selling B2B software products.'),
+         HumanMessage(
+             content=gpt_input)])
+
+    return response.content.strip()
+
+
+def dict_from_string(response):
+    """function to parse GPT response with competitors tickers and convert it to a dict"""
+    # Find a substring that starts with '{' and ends with '}', across multiple lines
+    match = re.search(r'\{.*?\}', response, re.DOTALL)
+
+    dictionary = None
+    if match:
+        try:
+            # Try to convert substring to dict
+            dictionary = ast.literal_eval(match.group())
+        except (ValueError, SyntaxError):
+            # Not a dictionary
+            return None
+    return dictionary
+
+
+def extract_comp_financials(tkr, comp_name, dict):
+    """function to extract financial metrics for competitors. Takes a ticker as an argument and appends financial metrics to dict"""
+
+    ticker = Ticker(tkr)
+    income_df = ticker.income_statement(frequency='a', trailing=False)
+
+    subset = income_df.loc[:, ['asOfDate', 'TotalRevenue', 'SellingGeneralAndAdministration']].reset_index()
+
+    # keep only 2022 data
+    subset = subset[subset['asOfDate'].dt.year == 2022].sort_values(by='asOfDate', ascending=False).head(1)
+
+    # get values
+    total_revenue = subset['TotalRevenue'].values[0]
+    sg_and_a = subset['SellingGeneralAndAdministration'].values[0]
+
+    # calculate sg&a as a percentage of total revenue
+    sg_and_a_pct = round(sg_and_a / total_revenue * 100, 2)
+
+    # add values to dictionary
+    dict[comp_name]['Total Revenue'] = total_revenue
+    dict[comp_name]['SG&A % Of Revenue'] = sg_and_a_pct
+
+
+def convert_to_nested_dict(input_dict, nested_key):
+    """function to convert a dictionary to a nested dictionary. Takes a dictionary and a nested key as arguments and returns a dictionary"""
+    output_dict = {}
+    for key, value in input_dict.items():
+        output_dict[key] = {nested_key: value}
+    return output_dict
+
+
+def shorten_summary(text):
+    # Split the text into sentences using a regular expression pattern
+    sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
+
+    # Return the first two sentences or less if there are fewer sentences
+    sen =  ' '.join(sentences[:2])
+
+    # if the summary is less than 350 characters, return the summary
+    if len(sen) <= 400:
+        return sen
+    else:
+        # if the summary is more than 350 characters, return the first 350 characters and truncate the last word
+        truncated_sen = text[:400].rsplit(' ', 1)[0] + '...'
+        return truncated_sen
+
+
+def peers_summary(df, selected_ticker):
+    df = df[df['Ticker'] != selected_ticker]
+
+    for tkr in df['Ticker']:
+        try:
+            profile = Ticker(tkr).asset_profile
+            summary = profile[tkr]['longBusinessSummary']
+            website = profile[tkr]['website']
+
+            # keep only the first two sentences of the summary
+            short_summary = shorten_summary(summary)
+            logo_url = 'https://logo.clearbit.com/' + website
+
+            # append short summary and logo_url to the df
+            df.loc[df['Ticker'] == tkr, 'Summary'] = short_summary
+            df.loc[df['Ticker'] == tkr, 'Logo'] = logo_url
+        except:
+            continue
+    # drop rows with missing summary
+    df = df.dropna(subset=['Summary'])
+    return df
+
+
+def fix_text_capitalization(text):
+    fixed_text = text.lower().capitalize()
+    return fixed_text
+
+
+def replace_multiple_symbols(string):
+    """function to fix description from yahoo finance, sometimes it has multiple dots at the end of the string"""
+    string = string.replace(':', '')
+    pattern = r'\.{2,}$'  # Matches two or more consecutive dots at the end of the string
+    replacement = '.'
+
+    # Check if the string ends with multiple symbols
+    if re.search(pattern, string):
+        # Replace multiple symbols with a single symbol
+        string = re.sub(pattern, replacement, string)
+    return string
+
+
+# Get the data from Snowflake
+conn = get_database_session()
+df = get_data(conn)
+
+# select columns to show
+df_filtered = df[['COMPANY_NAME', 'SECTOR', 'INDUSTRY', 'PROSPECT_STATUS', 'PRODUCT']]
+
+#create sidebar filters
+st.sidebar.write('**Use filters to select prospects** 👇')
+unique_sector = sorted(df['SECTOR'].unique())
+sector_checkbox = st.sidebar.checkbox('All Sectors', help='Check this box to select all sectors')
+
+#if select all checkbox is checked then select all sectors
+if sector_checkbox:
+    selected_sector = st.sidebar.multiselect('Select Sector', unique_sector, unique_sector)
+else:
+    selected_sector = st.sidebar.multiselect('Select Sector', unique_sector)
+
+#if a user selected sector then allow to check all industries checkbox
+if len(selected_sector) > 0:
+    industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries')
+    # filtering data
+    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector))]
+    # show number of selected customers
+    num_of_cust = str(df_filtered.shape[0])
+else:
+    industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries',
+                                           disabled=True)
+    # show number of selected customers
+    num_of_cust = str(df_filtered.shape[0])
+    df_filtered = df_filtered[['COMPANY_NAME', 'SECTOR', 'INDUSTRY', 'PROSPECT_STATUS', 'PRODUCT']]
+
+#if select all checkbox is checked then select all industries
+unique_industry = sorted(df['INDUSTRY'].loc[df['SECTOR'].isin(selected_sector)].unique())
+if industry_checkbox:
+    selected_industry = st.sidebar.multiselect('Select Industry', unique_industry, unique_industry)
+else:
+    selected_industry = st.sidebar.multiselect('Select Industry', unique_industry)
+
+#if a user selected industry then allow them to check all statuses checkbox
+if len(selected_industry) > 0:
+    status_checkbox = st.sidebar.checkbox('All Prospect Statuses', help='Check this box to select all prospect statuses')
+    # filtering data
+    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector)) & (df_filtered['INDUSTRY'].isin(selected_industry))]
+    # show number of selected customers
+    num_of_cust = str(df_filtered.shape[0])
+
+else:
+    status_checkbox = st.sidebar.checkbox('All Prospect Statuses', help='Check this box to select all prospect statuses', disabled=True)
+
+unique_status = sorted(df_filtered['PROSPECT_STATUS'].loc[df_filtered['SECTOR'].isin(selected_sector) & df_filtered['INDUSTRY'].isin(selected_industry)].unique())
+
+#if select all checkbox is checked then select all statuses
+if status_checkbox:
+    selected_status = st.sidebar.multiselect('Select Prospect Status', unique_status, unique_status)
+else:
+    selected_status = st.sidebar.multiselect('Select Prospect Status', unique_status)
+
+
+#if a user selected status then allow them to check all products checkbox
+if len(selected_status) > 0:
+    product_checkbox = st.sidebar.checkbox('All Products', help='Check this box to select all products')
+    # filtering data
+    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector)) & (df_filtered['INDUSTRY'].isin(selected_industry)) & (df_filtered['PROSPECT_STATUS'].isin(selected_status))]
+    # show number of selected customers
+    num_of_cust = str(df_filtered.shape[0])
+
+else:
+    product_checkbox = st.sidebar.checkbox('All Products', help='Check this box to select all products', disabled=True)
+
+unique_products = sorted(df_filtered['PRODUCT'].loc[df_filtered['SECTOR'].isin(selected_sector) &
+                                                    df_filtered['INDUSTRY'].isin(selected_industry)
+                                                    & df_filtered['PROSPECT_STATUS'].isin(selected_status)].unique())
+
+#if select all checkbox is checked then select all products
+if product_checkbox:
+    selected_product = st.sidebar.multiselect('Select Product', unique_products, unique_products)
+else:
+    selected_product = st.sidebar.multiselect('Select Product', unique_products)
+
+if selected_product:
+    # filtering data
+    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector)) & (df_filtered['INDUSTRY'].isin(selected_industry))
+                              & (df_filtered['PROSPECT_STATUS'].isin(selected_status)) & (df_filtered['PRODUCT'].isin(selected_product))]
+    # show number of selected customers
+    num_of_cust = str(df_filtered.shape[0])
+
+
+with st.sidebar:
+    st.markdown('''The dataset is taken from [Kaggle](https://www.kaggle.com/datasets/aramacus/usa-public-companies) and slightly modified for the purpose of this app.
+    ''', unsafe_allow_html=True)
+    st.markdown('''[GitHub Repo](https://github.com/arsentievalex/instant-insight-web-app)''', unsafe_allow_html=True)
+    st.markdown('''The app created by [Oleksandr Arsentiev](https://twitter.com/alexarsentiev) for the purpose of
+    Streamlit Summit Hackathon''', unsafe_allow_html=True)
+
+##############################################################################################################
+
+st.title('Welcome to the Instant Insight App!⚡')
+
+with st.expander('What is this app about?'):
+    st.write('''
+    This app is designed to generate an instant company research.\n
+    In a matter of few clicks, a user gets a PowerPoint presentation with the company overview, SWOT analysis, financials, and value propostion tailored for the selling product. 
+    The app works with the US public companies.
+    
+    Use Case Example:\n
+    Imagine working in sales for a B2B SaaS company that has hundreds of prospects and offers the following products: 
+    Accounting and Planning Software, CRM, Chatbot, and Cloud Data Storage.
+    You are tasked to do a basic prospect research and create presentations for your team. The prospects data is stored in a Snowflake database that feeds your CRM system.
+    You can use this app to quickly filter the prospects by sector, industry, prospect status, and product. 
+    Next, you can select the prospect you want to include in the presentation and click the button to generate the presentation.
+    And...that's it! You have the slides ready to be shared with your team.
+    
+    Tech Stack:\n
+    • Database - Snowflake via Snowflake Connector\n
+    • Data Processing - Pandas\n
+    • Research Data - Yahoo Finance via Yahooquery, GPT 3.5 via OpenAI API\n
+    • Visualization - Plotly\n
+    • Frontend - Streamlit, AgGrid\n
+    • Presentation - Python-pptx\n
+    ''')
+
+
+st.metric(label='Number of Prospects', value=num_of_cust)
+
+# button to create slides
+ui_container = st.container()
+with ui_container:
+    submit = st.button(label='Generate Presentation')
+
+# apply proper capitalization to column names and replace underscore with space
+df_filtered.columns = df_filtered.columns.str.title().str.replace('_', ' ')
+
+# creating AgGrid dynamic table and setting configurations
+gb = GridOptionsBuilder.from_dataframe(df_filtered)
+gb.configure_selection(selection_mode="single", use_checkbox=True)
+gb.configure_column(field='Company Name', width=270)
+gb.configure_column(field='Sector', width=260)
+gb.configure_column(field='Industry', width=350)
+gb.configure_column(field='Prospect Status', width=270)
+gb.configure_column(field='Product', width=240)
+
+gridOptions = gb.build()
+
+response = AgGrid(
+    df_filtered,
+    gridOptions=gridOptions,
+    enable_enterprise_modules=False,
+    height=600,
+    update_mode=GridUpdateMode.SELECTION_CHANGED,
+    data_return_mode=DataReturnMode.FILTERED_AND_SORTED,
+    fit_columns_on_grid_load=False,
+    theme='alpine',
+    allow_unsafe_jscode=True
+)
+
+# get selected rows
+response_df = pd.DataFrame(response["selected_rows"])
+
+# if user input is empty and button is clicked then show warning
+if submit and response_df.empty:
+    with ui_container:
+        st.warning("Please select a prospect!")
+
+# if user input is not empty and button is clicked then generate slides
+elif submit and response_df is not None:
+    with ui_container:
+        with st.spinner('Generating awesome slides for you...⏳'):
+
+            try:
+                # define variables for selected prospect
+                company_name = response_df['Company Name'].values[0]
+                product = response_df['Product'].values[0]
+
+                # join df with response_df to get a ticker of selected prospect
+                df_ticker = pd.merge(df, response_df, left_on='COMPANY_NAME', right_on='Company Name')
+                selected_ticker = df_ticker['TICKERS'].values[0]
+
+                # open presentation template
+                pptx = path + '//' + 'template.pptx'
+                prs = Presentation(pptx)
+
+                ticker = Ticker(selected_ticker)
+
+                # get stock info
+                name = ticker.price[selected_ticker]['shortName']
+                sector = ticker.summary_profile[selected_ticker]['sector']
+                industry = ticker.summary_profile[selected_ticker]['industry']
+                employees = ticker.summary_profile[selected_ticker]['fullTimeEmployees']
+                country = ticker.summary_profile[selected_ticker]['country']
+                city = ticker.summary_profile[selected_ticker]['city']
+                website = ticker.summary_profile[selected_ticker]['website']
+                summary = ticker.summary_profile[selected_ticker]['longBusinessSummary']
+                logo_url = 'https://logo.clearbit.com/' + website
+
+                # declare pptx variables
+                title_slide = prs.slides[0]
+                summary_slide = prs.slides[1]
+                s_w_slide = prs.slides[2]
+                key_people_slide = prs.slides[5]
+                vp_slide = prs.slides[4]
+                comp_slide = prs.slides[6]
+
+                # initiate a dictionary of placeholders and values to replace
+                replaces_1 = {
+                    '{company}': name,
+                    '{date}': today}
+
+                replaces_2 = {
+                    '{c}': name,
+                    '{s}': sector,
+                    '{i}': industry,
+                    '{co}': country,
+                    '{ci}': city,
+                    '{ee}': "{:,}".format(employees),
+                    '{w}': website,
+                    '{summary}': summary
+                }
+
+                # run the function to replace placeholders with values
+                replace_text(replaces_1, title_slide)
+                replace_text(replaces_2, summary_slide)
+
+                # check if a logo ulr returns code 200 (working link)
+                if requests.get(logo_url).status_code == 200:
+                    #create logo image object
+                    logo = resize_image(logo_url)
+                    logo.save('logo.png')
+                    logo_im = 'logo.png'
+
+                    # add logo to the slide
+                    add_image(prs.slides[1], image=logo_im, left=Inches(1.2), width=Inches(2), top=Inches(0.5))
+                    os.remove('logo.png')
+
+                ##############################################################################################################
+                # create slides with financial plots
+                # get financial data
+                fin_df = ticker.all_financial_data()
+
+                # plot stock price
+                stock_df = get_stock(ticker=ticker, period='5y', interval='1mo')
+                stock_fig = plot_graph(df=stock_df, x='Date', y='Open', title='Stock Price USD', name=name)
+
+                stock_fig.write_image("stock.png")
+                stock_im = 'stock.png'
+
+                add_image(prs.slides[3], image=stock_im, left=Inches(1.8), width=Inches(4.5), top=Inches(0.5))
+                os.remove('stock.png')
+
+                # plot revenue
+                rev_df = get_financials(df=fin_df, col_name='TotalRevenue', metric_name='Total Revenue')
+                rev_fig = plot_graph(df=rev_df, x='Year', y='Total Revenue', title='Total Revenue USD', name=name)
+
+                rev_fig.write_image("rev.png")
+                rev_im = 'rev.png'
+
+                add_image(prs.slides[3], image=rev_im, left=Inches(1.8), width=Inches(4.5), top=Inches(3.8))
+                os.remove('rev.png')
+
+                # plot market cap
+                debt_df = get_financials(df=fin_df, col_name='TotalDebt', metric_name='Total Debt')
+                debt_fig = plot_graph(df=debt_df, x='Year', y='Total Debt', title='Total Debt USD', name=name)
+
+                debt_fig.write_image("marketcap.png")
+                debt_im = 'marketcap.png'
+
+                add_image(prs.slides[3], image=debt_im, left=Inches(7.3), width=Inches(4.5), top=Inches(0.5))
+                os.remove('marketcap.png')
+
+                # plot ebitda
+                # adding try and except because some companies like banks don't have EBITDA data
+                try:
+                    ebitda_df = get_financials(df=fin_df, col_name='NormalizedEBITDA', metric_name='EBITDA')
+                    ebitda_fig = plot_graph(df=ebitda_df, x='Year', y='EBITDA', title='EBITDA USD', name=name)
+
+                    ebitda_fig.write_image("ebitda.png")
+                    ebitda_im = 'ebitda.png'
+
+                    add_image(prs.slides[3], image=ebitda_im, left=Inches(7.3), width=Inches(4.5), top=Inches(3.8))
+                    os.remove('ebitda.png')
+                except:
+                    pass
+
+                ############################################################################################################
+                # create competitors slide
+                input_competitors = """What are the top competitors of {} company with ticker {}?
+                                    Provide up to 4 most relevant public competitors comparable by revenue and market cap.
+                                    Return output as a Python dictionary with company name as key and ticker as value.
+                                    Do not return anything else."""
+
+                # format template with company name and ticker
+                input_competitors = input_competitors.format(name, selected_ticker)
+
+                # return response from GPT-3
+                gpt_comp_response = generate_gpt_response(gpt_input=input_competitors, max_tokens=250)
+
+                # extract dictionary from response
+                peers_dict = dict_from_string(gpt_comp_response)
+
+                # check if any competitors were returned
+                if peers_dict is not None:
+
+                    # convert dict to nested dict to later hold financial data
+                    peers_dict_nested = convert_to_nested_dict(input_dict=peers_dict, nested_key='Ticker')
+
+                    # add current ticker to the list
+                    peers_dict_nested[name] = {'Ticker': selected_ticker}
+
+                    # extract financial data for each competitor
+                    for key, value in peers_dict_nested.items():
+                        try:
+                            extract_comp_financials(tkr=value['Ticker'], comp_name=key, dict=peers_dict_nested)
+                        # if ticker is not found, drop it from the peers dict and continue
+                        except:
+                            del peers_dict[key]
+                            continue
+
+                    # create a dataframe with peers financial data
+                    peers_df = pd.DataFrame.from_dict(peers_dict_nested, orient='index')
+                    peers_df = peers_df.reset_index().rename(columns={'index': 'Company Name'})
+
+                    # plot revenue vs peers graph
+                    sg_and_a_peers_fig = peers_plot(df=peers_df, name=name, metric='SG&A % Of Revenue')
+
+                    sg_and_a_peers_fig.write_image("sg_and_a_peers.png")
+                    sg_and_a_peers_im = 'sg_and_a_peers.png'
+
+                    add_image(prs.slides[6], image=sg_and_a_peers_im, left=Inches(0.8), width=Inches(4.8), top=Inches(0.5))
+                    os.remove('sg_and_a_peers.png')
+
+                    # plot operating expenses vs peers graph
+                    rev_peers_fig = peers_plot(df=peers_df, name=name, metric='Total Revenue')
+                    rev_peers_fig.write_image("rev_peers.png")
+                    rev_peers_im = 'rev_peers.png'
+
+                    add_image(prs.slides[6], image=rev_peers_im, left=Inches(0.8), width=Inches(4.8), top=Inches(3.8))
+                    os.remove('rev_peers.png')
+
+                    # get competitor company descriptions
+                    peers_summary_df = peers_summary(df=peers_df, selected_ticker=selected_ticker)
+
+                    # create a list of competitor descriptions and logos
+                    summary_list = peers_summary_df['Summary'].tolist()
+                    logo_list = peers_summary_df['Logo'].tolist()
+
+                    # if there are less than 4 competitors, add empty strings to the list
+                    if len(summary_list) < 4:
+                        summary_list += [''] * (4 - len(summary_list))
+
+                    # unpack list into variables
+                    c1, c2, c3, c4 = summary_list
+
+                    # initiate a dictionary of placeholders and values to replace
+                    replaces_5 = {
+                        '{a}': c1,
+                        '{b}': c2,
+                        '{c}': c3,
+                        '{d}': c4}
+
+                    # replace placeholders with values
+                    replace_text(replaces_5, comp_slide)
+
+                    top_row = Inches(0.7)
+
+                    for l in logo_list:
+                        # check if a logo ulr returns code 200 (working link)
+                        if requests.get(l).status_code == 200:
+                            # create logo image object
+                            logo = resize_image(l)
+                            logo.save('logo.png')
+                            logo_im = 'logo.png'
+
+                            # add logo to the slide
+                            add_image(comp_slide, image=logo_im, left=Inches(5.4), width=Inches(1.2), top=top_row)
+                            top_row += Inches(1.8)
+                            os.remove('logo.png')
+
+                ############################################################################################################
+                # create strengths and weaknesses slide
+
+                input_swot = """Create a brief SWOT analysis of {} company with ticker {}?
+                                Return output as a Python dictionary with the following keys: Strengths, Weaknesses, 
+                                Opportunities, Threats as keys and analysis as values.
+                                Do not return anything else."""
+
+                input_swot = input_swot.format(name, selected_ticker)
+
+                # return response from GPT-3
+                gpt_swot = generate_gpt_response(input_swot, 1000)
+
+                # extract dictionary from response
+                swot_dict = dict_from_string(gpt_swot)
+
+                # create title for the slide
+                swot_title = 'SWOT Analysis of {}'.format(name)
+
+                # initiate a dictionary of placeholders and values to replace
+                replaces_3 = {
+                    '{s}': swot_dict['Strengths'],
+                    '{w}': swot_dict['Weaknesses'],
+                    '{o}': swot_dict['Opportunities'],
+                    '{t}': swot_dict['Threats'],
+                    '{swot_title}': swot_title}
+
+                # run the function to replace placeholders with values
+                replace_text(replaces_3, s_w_slide)
+
+                ############################################################################################
+
+                # create value prop slide
+                input_vp = """"Create a brief value proposition using Value Proposition Canvas framework for {product} for 
+                {name} company with ticker {ticker} that operates in {industry} industry.
+                Return output as a Python dictionary with the following keys: Pains, Gains, Gain Creators, 
+                Pain Relievers as a keys and text as values. Be specific and concise. Do not return anything else."""
+
+                input_vp = input_vp.format(product=product, name=name, ticker=selected_ticker, industry=industry)
+
+                # return response from GPT-3
+                gpt_value_prop = generate_gpt_response(input_vp, 1000)
+
+                # extract dictionary from response
+                value_prop_dict = dict_from_string(gpt_value_prop)
+
+                vp_title = 'Value Proposition of {} for {}'.format(product, name)
+
+                # initiate a dictionary of placeholders and values to replace
+                replaces_4 = {
+                    '{p}': value_prop_dict['Pains'],
+                    '{g}': value_prop_dict['Gains'],
+                    '{gc}': value_prop_dict['Gain Creators'],
+                    '{pr}': value_prop_dict['Pain Relievers'],
+                    '{vp_title}': vp_title}
+
+                # run the function to replace placeholders with values
+                replace_text(replaces_4, vp_slide)
+
+                ############################################################################################
+                # key people slide
+                key_people = ticker.asset_profile[selected_ticker]['companyOfficers']
+
+                # create title, name and age lists from key_people
+                kp_titles = []
+                kp_names = []
+                kp_age = []
+
+                for i in range(4):
+                    try:
+                        kp_titles.append(key_people[i]['title'])
+                        kp_names.append(key_people[i]['name'])
+                        kp_age.append(key_people[i]['age'])
+                    except:
+                        kp_titles.append('')
+                        kp_names.append('')
+                        kp_age.append('')
+
+                replaces_6 = {
+                    '{t1}': kp_titles[0],
+                    '{t2}': kp_titles[1],
+                    '{t3}': kp_titles[2],
+                    '{t4}': kp_titles[3],
+                    '{n1}': kp_names[0],
+                    '{n2}': kp_names[1],
+                    '{n3}': kp_names[2],
+                    '{n4}': kp_names[3],
+                    '{a1}': kp_age[0],
+                    '{a2}': kp_age[1],
+                    '{a3}': kp_age[2],
+                    '{a4}': kp_age[3],
+                    '{company_name}': name}
+
+                # run the function to replace placeholders with values
+                replace_text(replaces_6, key_people_slide)
+
+                ############################################################################################
+                # corporate news
+                news_df = ticker.corporate_events
+
+                # sort by date descending
+                news_df = news_df.sort_values(by=['date'], ascending=False)
+                # reset index
+                news_df.reset_index(inplace=True)
+
+                # keep only top three rows
+                news_df = news_df.head(3)
+
+                # clean description column
+                news_df['fixed_description'] = news_df['description'].apply(fix_text_capitalization).apply(
+                    replace_multiple_symbols).apply(shorten_summary)
+
+                # Remove the timestamp and keep only the date
+                news_df['date'] = news_df['date'].dt.date
+
+                # drop duplicates in headline columns
+                news_df.drop_duplicates(subset=['headline'], inplace=True)
+
+                # drop rows with empty headline
+                news_df.dropna(subset=['headline'], inplace=True)
+
+                # create title, name and age lists from key_people
+                news_headlines = []
+                news_dates = []
+                news_desc = []
+
+                for i in range(3):
+                    try:
+                        news_headlines.append(news_df['headline'][i])
+                        news_dates.append(news_df['date'][i])
+                        news_desc.append(news_df['fixed_description'][i])
+                    except:
+                        news_headlines.append('')
+                        news_dates.append('')
+                        news_desc.append('')
+
+                replaces_7 = {
+                    '{h1}': news_headlines[0],
+                    '{h2}': news_headlines[1],
+                    '{h3}': news_headlines[2],
+                    '{d1}': news_dates[0],
+                    '{d2}': news_dates[1],
+                    '{d3}': news_dates[2],
+                    '{desc1}': news_desc[0],
+                    '{desc2}': news_desc[1],
+                    '{desc3}': news_desc[2]}
+
+                # run the function to replace placeholders with values
+                replace_text(replaces_7, key_people_slide)
+
+                ############################################################################################
+                # create file name
+                filename = '{} {}.pptx'.format(name, today)
+
+                # save presentation as binary output
+                binary_output = BytesIO()
+                prs.save(binary_output)
+
+                # display success message and download button
+                with ui_container:
+                    st.success('The slides have been generated! :tada:')
+
+                    st.download_button(label='Click to download PowerPoint',
+                                       data=binary_output.getvalue(),
+                                       file_name=filename)
+
+            # if there is any error, display an error message
+            except Exception as e:
+                with ui_container:
+                    #st.write(e)
+                    # get more details on error
+                    #st.write(traceback.format_exc())
+                    st.error("Oops, something went wrong, please try again or select a different prospect.")
