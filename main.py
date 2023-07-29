@@ -468,7 +468,7 @@ with st.expander('What is this app about?'):
     Tech Stack:\n
     • Database - Snowflake via Snowflake Connector\n
     • Data Processing - Pandas\n
-    • Research Data - Yahoo Finance via Yahooquery, GPT 3.5 via OpenAI API\n
+    • Research Data - Yahoo Finance via Yahooquery, GPT 3.5 via LangChain\n
     • Visualization - Plotly\n
     • Frontend - Streamlit, AgGrid\n
     • Presentation - Python-pptx\n
