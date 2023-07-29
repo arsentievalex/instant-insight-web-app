@@ -52,9 +52,8 @@ def get_database_session():
 
 
 @st.cache_data
-def get_data(_conn):
+def get_data(_conn, query):
     """Returns a pandas DataFrame with the data from Snowflake."""
-    query = 'SELECT * FROM us_prospects;'
     cur = conn.cursor()
     cur.execute(query)
 
@@ -104,7 +103,6 @@ def add_image(slide, image, left, top, width):
     slide.shapes.add_picture(image, left=left, top=top, width=width)
 
 
-# function to replace text in pptx first slide with selected filters
 def replace_text(replacements, slide):
     """function to replace text on a PowerPoint slide. Takes dict of {match: replacement, ... } and replaces all matches"""
     # Iterate through all shapes in the slide
@@ -166,6 +164,36 @@ def peers_plot(df, name, metric):
     return fig
 
 
+def esg_plot(name, df):
+    # Define colors for types
+    colors = {name: '#A27D4F', 'Peer Group': '#D9D9D9'}
+
+    # Creating the bar chart
+    fig = go.Figure()
+    for type in df['Type'].unique():
+        fig.add_trace(go.Bar(
+            x=df[df['Type'] == type]['variable'],
+            y=df[df['Type'] == type]['value'],
+            name=type,
+            text=df[df['Type'] == type]['value'],
+            textposition='outside',
+            marker_color=colors[type]
+        ))
+    fig.update_layout(
+        height=700,
+        width=1000,
+        barmode='group',
+        title="ESG Score vs Peers Average",
+        xaxis_title="",
+        yaxis_title="Score",
+        legend_title="Type",
+        xaxis=dict(tickangle=0),
+        paper_bgcolor='rgba(0,0,0,0)',
+        plot_bgcolor='rgba(0,0,0,0)')
+    return fig
+
+
+
 def get_financials(df, col_name, metric_name):
     """function to get financial metrics from a DataFrame. Takes DataFrame, column name and metric name as arguments and returns a DataFrame"""
     metric = df.loc[:, ['asOfDate', col_name]]
@@ -209,7 +237,6 @@ def dict_from_string(response):
 
 def extract_comp_financials(tkr, comp_name, dict):
     """function to extract financial metrics for competitors. Takes a ticker as an argument and appends financial metrics to dict"""
-
     ticker = Ticker(tkr)
     income_df = ticker.income_statement(frequency='a', trailing=False)
 
@@ -295,9 +322,40 @@ def replace_multiple_symbols(string):
     return string
 
 
+def no_data_plot():
+    """plot to return when there is no data available"""
+    # Create a blank figure with a transparent background
+    fig = go.Figure()
+
+    # Add a text annotation for "NO DATA AVAILABLE" at the center of the plot
+    fig.add_annotation(
+        x=0.5,
+        y=0.5,
+        xref='paper',
+        yref='paper',
+        text='NO DATA AVAILABLE',
+        showarrow=False,
+        font=dict(size=26, color='black'),
+    )
+
+    # Customize layout to have a transparent background
+    fig.update_layout(
+        paper_bgcolor='rgba(0,0,0,0)',  # Transparent background
+        plot_bgcolor='rgba(0,0,0,0)',  # Transparent plot area
+        xaxis_showgrid=False,  # Hide x-axis gridlines
+        yaxis_showgrid=False,  # Hide y-axis gridlines
+        xaxis=dict(visible=False),  # Hide x-axis labels and ticks
+        yaxis=dict(visible=False),  # Hide y-axis labels and ticks
+    )
+    return fig
+
+
 # Get the data from Snowflake
 conn = get_database_session()
-df = get_data(conn)
+
+query = "SELECT * FROM us_prospects LIMIT 500;"
+
+df = get_data(conn, query=query)
 
 # select columns to show
 df_filtered = df[['COMPANY_NAME', 'SECTOR', 'INDUSTRY', 'PROSPECT_STATUS', 'PRODUCT']]
@@ -321,8 +379,7 @@ if len(selected_sector) > 0:
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
 else:
-    industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries',
-                                           disabled=True)
+    industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries', disabled=True)
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
     df_filtered = df_filtered[['COMPANY_NAME', 'SECTOR', 'INDUSTRY', 'PROSPECT_STATUS', 'PRODUCT']]
@@ -494,9 +551,10 @@ elif submit and response_df is not None:
                 title_slide = prs.slides[0]
                 summary_slide = prs.slides[1]
                 s_w_slide = prs.slides[2]
-                key_people_slide = prs.slides[5]
                 vp_slide = prs.slides[4]
+                key_people_slide = prs.slides[5]
                 comp_slide = prs.slides[6]
+                esg_slide = prs.slides[7]
 
                 # initiate a dictionary of placeholders and values to replace
                 replaces_1 = {
@@ -823,6 +881,57 @@ elif submit and response_df is not None:
                 replace_text(replaces_7, key_people_slide)
 
                 ############################################################################################
+                # ESG slide
+                # get ESG scores from Yahoo Finance
+                try:
+                    esg_scores = ticker.esg_scores
+
+                    # get esg score data for the company
+                    total_esg = esg_scores[selected_ticker]['totalEsg']
+                    governance_score = esg_scores[selected_ticker]['governanceScore']
+                    environment_score = esg_scores[selected_ticker]['environmentScore']
+                    social_score = esg_scores[selected_ticker]['socialScore']
+
+                    # get peer group data
+                    peer_group = esg_scores[selected_ticker]['peerGroup']
+                    peers_total_esg_avg = esg_scores[selected_ticker]['peerEsgScorePerformance']['avg']
+                    peers_governance_avg = esg_scores[selected_ticker]['peerGovernancePerformance']['avg']
+                    peers_env_avg = esg_scores[selected_ticker]['peerEnvironmentPerformance']['avg']
+                    peers_social_avg = esg_scores[selected_ticker]['peerSocialPerformance']['avg']
+
+                    esg_dict = {'Type': [name, 'Peer Group'],
+                                'Total ESG Score': [round(total_esg, 2), round(peers_total_esg_avg, 2)],
+                                'Governance Score': [round(governance_score, 2), round(peers_governance_avg, 2)],
+                                'Environment Score': [round(environment_score, 2), round(peers_env_avg, 2)],
+                                'Social Score': [round(social_score, 2), round(peers_social_avg, 2)]}
+
+                    esg_df = pd.DataFrame(esg_dict)
+                    # Pivot DataFrame
+                    esg_df_melted = esg_df.melt(id_vars='Type', value_vars=['Total ESG Score', 'Governance Score', 'Environment Score', 'Social Score'])
+                    # run function to generate a bar chart with esg comparison
+                    esg_fig = esg_plot(name=name, df=esg_df_melted)
+
+                    esg_fig.write_image("esg.png")
+                    esg_im = 'esg.png'
+
+                    add_image(esg_slide, image=esg_im, left=Inches(3), width=Inches(7.7), top=Inches(1.6))
+                    os.remove('esg.png')
+
+                except Exception as e:
+                    # if the ESG data is not avaialble, return plot with a message (preferably the slide would be deleted, but there is no option for that in python-pptx)
+                    no_data_fig = no_data_plot()
+                    no_data_fig.write_image("no_data.png")
+                    no_data_im = 'no_data.png'
+
+                    add_image(esg_slide, image=no_data_im, left=Inches(3), width=Inches(7.7), top=Inches(1.6))
+                    os.remove('no_data.png')
+
+                # replace title with company name
+                replaces_8 = {'{company_name}': name}
+                # run the function to replace placeholders with values
+                replace_text(replaces_8, esg_slide)
+
+                ###########################################################################################
                 # create file name
                 filename = '{} {}.pptx'.format(name, today)
 
@@ -841,7 +950,7 @@ elif submit and response_df is not None:
             # if there is any error, display an error message
             except Exception as e:
                 with ui_container:
-                    #st.write(e)
+                    # st.write(e)
                     # get more details on error
-                    #st.write(traceback.format_exc())
+                    # st.write(traceback.format_exc())
                     st.error("Oops, something went wrong, please try again or select a different prospect.")
