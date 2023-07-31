@@ -16,6 +16,8 @@ Wait for up to 30 sec and download a PowerPoint:
 <img src="https://i.postimg.cc/3xSWgTjv/instant-demo2.gif"/>
 
 
+[App's URL](https://arsentievalex-instant-insight-web-app-main-gz753r.streamlit.app/)
+
 Tech Stack:
 
 • Database - Snowflake via Snowflake Connector
