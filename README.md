@@ -1,6 +1,6 @@
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://arsentievalex-instant-insight-web-app-main-gz753r.streamlit.app/)
 
-# Instant Insight Web App
+# Instant Insight Web App (3rd place in Streamlit Hackathon for Snowflake Summit 2023)
 
 This app is designed to generate an instant company research.
 
