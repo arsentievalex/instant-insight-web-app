@@ -533,8 +533,8 @@ elif submit and response_df is not None:
                 product = response_df['Product'].values[0]
 
                 # join df with response_df to get a ticker of selected prospect
-                df_ticker = pd.merge(df, response_df, left_on='COMPANY_NAME', right_on='Company Name')
-                selected_ticker = df_ticker['TICKERS'].values[0]
+                df_ticker = pd.merge(df, response_df, left_on='Company_Name', right_on='Company Name')
+                selected_ticker = df_ticker['Tickers'].values[0]
 
                 # open presentation template
                 pptx = path + '//' + 'template.pptx'
