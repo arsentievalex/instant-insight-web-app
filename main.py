@@ -381,17 +381,17 @@ else:
 if len(selected_sector) > 0:
     industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries')
     # filtering data
-    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector))]
+    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector))]
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
 else:
     industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries', disabled=True)
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
-    df_filtered = df_filtered[['COMPANY_NAME', 'SECTOR', 'INDUSTRY', 'PROSPECT_STATUS', 'PRODUCT']]
+    df_filtered = df_filtered[['Company_Name', 'Sector', 'Industry', 'Prospect_Status', 'Product']]
 
 #if select all checkbox is checked then select all industries
-unique_industry = sorted(df['INDUSTRY'].loc[df['SECTOR'].isin(selected_sector)].unique())
+unique_industry = sorted(df['Industry'].loc[df['Sector'].isin(selected_sector)].unique())
 if industry_checkbox:
     selected_industry = st.sidebar.multiselect('Select Industry', unique_industry, unique_industry)
 else:
@@ -401,14 +401,14 @@ else:
 if len(selected_industry) > 0:
     status_checkbox = st.sidebar.checkbox('All Prospect Statuses', help='Check this box to select all prospect statuses')
     # filtering data
-    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector)) & (df_filtered['INDUSTRY'].isin(selected_industry))]
+    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector)) & (df_filtered['Industry'].isin(selected_industry))]
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
 
 else:
     status_checkbox = st.sidebar.checkbox('All Prospect Statuses', help='Check this box to select all prospect statuses', disabled=True)
 
-unique_status = sorted(df_filtered['PROSPECT_STATUS'].loc[df_filtered['SECTOR'].isin(selected_sector) & df_filtered['INDUSTRY'].isin(selected_industry)].unique())
+unique_status = sorted(df_filtered['Prospect_Status'].loc[df_filtered['Sector'].isin(selected_sector) & df_filtered['Industry'].isin(selected_industry)].unique())
 
 #if select all checkbox is checked then select all statuses
 if status_checkbox:
@@ -421,16 +421,16 @@ else:
 if len(selected_status) > 0:
     product_checkbox = st.sidebar.checkbox('All Products', help='Check this box to select all products')
     # filtering data
-    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector)) & (df_filtered['INDUSTRY'].isin(selected_industry)) & (df_filtered['PROSPECT_STATUS'].isin(selected_status))]
+    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector)) & (df_filtered['Industry'].isin(selected_industry)) & (df_filtered['Prospect_Status'].isin(selected_status))]
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
 
 else:
     product_checkbox = st.sidebar.checkbox('All Products', help='Check this box to select all products', disabled=True)
 
-unique_products = sorted(df_filtered['PRODUCT'].loc[df_filtered['SECTOR'].isin(selected_sector) &
-                                                    df_filtered['INDUSTRY'].isin(selected_industry)
-                                                    & df_filtered['PROSPECT_STATUS'].isin(selected_status)].unique())
+unique_products = sorted(df_filtered['Product'].loc[df_filtered['Sector'].isin(selected_sector) &
+                                                    df_filtered['Industry'].isin(selected_industry)
+                                                    & df_filtered['Prospect_Status'].isin(selected_status)].unique())
 
 #if select all checkbox is checked then select all products
 if product_checkbox:
@@ -440,8 +440,8 @@ else:
 
 if selected_product:
     # filtering data
-    df_filtered = df_filtered[(df_filtered['SECTOR'].isin(selected_sector)) & (df_filtered['INDUSTRY'].isin(selected_industry))
-                              & (df_filtered['PROSPECT_STATUS'].isin(selected_status)) & (df_filtered['PRODUCT'].isin(selected_product))]
+    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector)) & (df_filtered['Industry'].isin(selected_industry))
+                              & (df_filtered['Prospect_Status'].isin(selected_status)) & (df_filtered['Product'].isin(selected_product))]
     # show number of selected customers
     num_of_cust = str(df_filtered.shape[0])
 
