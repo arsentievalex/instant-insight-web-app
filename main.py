@@ -32,39 +32,45 @@ today = date.today()
 
 
 # get Snowflake credentials from Streamlit secrets
-SNOWFLAKE_ACCOUNT = st.secrets["snowflake_credentials"]["SNOWFLAKE_ACCOUNT"]
-SNOWFLAKE_USER = st.secrets["snowflake_credentials"]["SNOWFLAKE_USER"]
-SNOWFLAKE_PASSWORD = st.secrets["snowflake_credentials"]["SNOWFLAKE_PASSWORD"]
-SNOWFLAKE_DATABASE = st.secrets["snowflake_credentials"]["SNOWFLAKE_DATABASE"]
-SNOWFLAKE_SCHEMA = st.secrets["snowflake_credentials"]["SNOWFLAKE_SCHEMA"]
+# SNOWFLAKE_ACCOUNT = st.secrets["snowflake_credentials"]["SNOWFLAKE_ACCOUNT"]
+# SNOWFLAKE_USER = st.secrets["snowflake_credentials"]["SNOWFLAKE_USER"]
+# SNOWFLAKE_PASSWORD = st.secrets["snowflake_credentials"]["SNOWFLAKE_PASSWORD"]
+# SNOWFLAKE_DATABASE = st.secrets["snowflake_credentials"]["SNOWFLAKE_DATABASE"]
+# SNOWFLAKE_SCHEMA = st.secrets["snowflake_credentials"]["SNOWFLAKE_SCHEMA"]
 
 
-@st.cache_resource
-def get_database_session():
-    """Returns a database session object."""
-    return snowflake.connector.connect(
-        account=SNOWFLAKE_ACCOUNT,
-        user=SNOWFLAKE_USER,
-        password=SNOWFLAKE_PASSWORD,
-        database=SNOWFLAKE_DATABASE,
-        schema=SNOWFLAKE_SCHEMA,
-    )
+# @st.cache_resource
+# def get_database_session():
+#     """Returns a database session object."""
+#     return snowflake.connector.connect(
+#         account=SNOWFLAKE_ACCOUNT,
+#         user=SNOWFLAKE_USER,
+#         password=SNOWFLAKE_PASSWORD,
+#         database=SNOWFLAKE_DATABASE,
+#         schema=SNOWFLAKE_SCHEMA,
+#     )
+
+
+# @st.cache_data
+# def get_data(_conn, query):
+#     """Returns a pandas DataFrame with the data from Snowflake."""
+#     cur = conn.cursor()
+#     cur.execute(query)
+
+#     # Fetch the result as a pandas DataFrame
+#     column_names = [col[0] for col in cur.description]
+#     data = cur.fetchall()
+#     df = pd.DataFrame(data, columns=column_names)
+
+#     # Close the connection to Snowflake
+#     cur.close()
+#     conn.close()
+#     return df
 
 
 @st.cache_data
-def get_data(_conn, query):
-    """Returns a pandas DataFrame with the data from Snowflake."""
-    cur = conn.cursor()
-    cur.execute(query)
-
-    # Fetch the result as a pandas DataFrame
-    column_names = [col[0] for col in cur.description]
-    data = cur.fetchall()
-    df = pd.DataFrame(data, columns=column_names)
-
-    # Close the connection to Snowflake
-    cur.close()
-    conn.close()
+def get_data():
+    df = pd.read_csv('prospects.csv')
     return df
 
 
@@ -351,18 +357,18 @@ def no_data_plot():
 
 
 # Get the data from Snowflake
-conn = get_database_session()
+#conn = get_database_session()
 
-query = "SELECT * FROM us_prospects LIMIT 500;"
+#query = "SELECT * FROM us_prospects LIMIT 500;"
 
-df = get_data(conn, query=query)
+df = get_data()
 
 # select columns to show
-df_filtered = df[['COMPANY_NAME', 'SECTOR', 'INDUSTRY', 'PROSPECT_STATUS', 'PRODUCT']]
+df_filtered = df[['Company_Name', 'Sector', 'Industry', 'Prospect_Status', 'Product']]
 
 #create sidebar filters
 st.sidebar.write('**Use filters to select prospects** 👇')
-unique_sector = sorted(df['SECTOR'].unique())
+unique_sector = sorted(df['Sector'].unique())
 sector_checkbox = st.sidebar.checkbox('All Sectors', help='Check this box to select all sectors')
 
 #if select all checkbox is checked then select all sectors
