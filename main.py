@@ -1,6 +1,7 @@
 import pandas as pd
 import snowflake.connector
 import streamlit as st
+from streamlit_dynamic_filters import DynamicFilters
 from st_aggrid import AgGrid
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 from st_aggrid import GridUpdateMode, DataReturnMode
@@ -21,11 +22,10 @@ import traceback
 import re
 import ast
 
-
 # hide future warnings (caused by st_aggrid)
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-#set page layout and define basic variables
+# set page layout and define basic variables
 st.set_page_config(layout="wide", page_icon='⚡', page_title="Instant Insight")
 path = os.path.dirname(__file__)
 today = date.today()
@@ -140,7 +140,7 @@ def get_stock(ticker, period, interval):
 def plot_graph(df, x, y, title, name):
     """function to plot a line graph. Takes DataFrame, x and y axis, title and name as arguments and returns a Plotly figure"""
     fig = px.line(df, x=x, y=y, template='simple_white',
-                        title='<b>{} {}</b>'.format(name, title))
+                  title='<b>{} {}</b>'.format(name, title))
     fig.update_traces(line_color='#A27D4F')
     fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)')
     return fig
@@ -163,9 +163,9 @@ def peers_plot(df, name, metric):
             color_map[label] = '#D9D9D9'
 
     fig = px.bar(df_sorted, y='Company Name', x=metric, template='simple_white', color='Company Name',
-                        color_discrete_map=color_map,
-                        orientation='h',
-                        title='<b>{} {} vs Peers FY22</b>'.format(name, metric))
+                 color_discrete_map=color_map,
+                 orientation='h',
+                 title='<b>{} {} vs Peers FY22</b>'.format(name, metric))
     fig.update_layout(paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', showlegend=False, yaxis_title='')
     return fig
 
@@ -197,7 +197,6 @@ def esg_plot(name, df):
         paper_bgcolor='rgba(0,0,0,0)',
         plot_bgcolor='rgba(0,0,0,0)')
     return fig
-
 
 
 def get_financials(df, col_name, metric_name):
@@ -276,7 +275,7 @@ def shorten_summary(text):
     sentences = re.split(r'(?<!\w\.\w.)(?<![A-Z][a-z]\.)(?<=\.|\?)\s', text)
 
     # Return the first two sentences or less if there are fewer sentences
-    sen =  ' '.join(sentences[:2])
+    sen = ' '.join(sentences[:2])
 
     # if the summary is less than 350 characters, return the summary
     if len(sen) <= 400:
@@ -357,93 +356,19 @@ def no_data_plot():
 
 
 # Get the data from Snowflake
-#conn = get_database_session()
+# conn = get_database_session()
 
-#query = "SELECT * FROM us_prospects LIMIT 500;"
+# query = "SELECT * FROM us_prospects LIMIT 500;"
 
 df = get_data()
 
-# select columns to show
-df_filtered = df[['Company_Name', 'Sector', 'Industry', 'Prospect_Status', 'Product']]
-
-#create sidebar filters
+# create sidebar filters
 st.sidebar.write('**Use filters to select prospects** 👇')
-unique_sector = sorted(df['Sector'].unique())
-sector_checkbox = st.sidebar.checkbox('All Sectors', help='Check this box to select all sectors')
 
-#if select all checkbox is checked then select all sectors
-if sector_checkbox:
-    selected_sector = st.sidebar.multiselect('Select Sector', unique_sector, unique_sector)
-else:
-    selected_sector = st.sidebar.multiselect('Select Sector', unique_sector)
-
-#if a user selected sector then allow to check all industries checkbox
-if len(selected_sector) > 0:
-    industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries')
-    # filtering data
-    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector))]
-    # show number of selected customers
-    num_of_cust = str(df_filtered.shape[0])
-else:
-    industry_checkbox = st.sidebar.checkbox('All Industries', help='Check this box to select all industries', disabled=True)
-    # show number of selected customers
-    num_of_cust = str(df_filtered.shape[0])
-    df_filtered = df_filtered[['Company_Name', 'Sector', 'Industry', 'Prospect_Status', 'Product']]
-
-#if select all checkbox is checked then select all industries
-unique_industry = sorted(df['Industry'].loc[df['Sector'].isin(selected_sector)].unique())
-if industry_checkbox:
-    selected_industry = st.sidebar.multiselect('Select Industry', unique_industry, unique_industry)
-else:
-    selected_industry = st.sidebar.multiselect('Select Industry', unique_industry)
-
-#if a user selected industry then allow them to check all statuses checkbox
-if len(selected_industry) > 0:
-    status_checkbox = st.sidebar.checkbox('All Prospect Statuses', help='Check this box to select all prospect statuses')
-    # filtering data
-    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector)) & (df_filtered['Industry'].isin(selected_industry))]
-    # show number of selected customers
-    num_of_cust = str(df_filtered.shape[0])
-
-else:
-    status_checkbox = st.sidebar.checkbox('All Prospect Statuses', help='Check this box to select all prospect statuses', disabled=True)
-
-unique_status = sorted(df_filtered['Prospect_Status'].loc[df_filtered['Sector'].isin(selected_sector) & df_filtered['Industry'].isin(selected_industry)].unique())
-
-#if select all checkbox is checked then select all statuses
-if status_checkbox:
-    selected_status = st.sidebar.multiselect('Select Prospect Status', unique_status, unique_status)
-else:
-    selected_status = st.sidebar.multiselect('Select Prospect Status', unique_status)
-
-
-#if a user selected status then allow them to check all products checkbox
-if len(selected_status) > 0:
-    product_checkbox = st.sidebar.checkbox('All Products', help='Check this box to select all products')
-    # filtering data
-    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector)) & (df_filtered['Industry'].isin(selected_industry)) & (df_filtered['Prospect_Status'].isin(selected_status))]
-    # show number of selected customers
-    num_of_cust = str(df_filtered.shape[0])
-
-else:
-    product_checkbox = st.sidebar.checkbox('All Products', help='Check this box to select all products', disabled=True)
-
-unique_products = sorted(df_filtered['Product'].loc[df_filtered['Sector'].isin(selected_sector) &
-                                                    df_filtered['Industry'].isin(selected_industry)
-                                                    & df_filtered['Prospect_Status'].isin(selected_status)].unique())
-
-#if select all checkbox is checked then select all products
-if product_checkbox:
-    selected_product = st.sidebar.multiselect('Select Product', unique_products, unique_products)
-else:
-    selected_product = st.sidebar.multiselect('Select Product', unique_products)
-
-if selected_product:
-    # filtering data
-    df_filtered = df_filtered[(df_filtered['Sector'].isin(selected_sector)) & (df_filtered['Industry'].isin(selected_industry))
-                              & (df_filtered['Prospect_Status'].isin(selected_status)) & (df_filtered['Product'].isin(selected_product))]
-    # show number of selected customers
-    num_of_cust = str(df_filtered.shape[0])
+# display dynamic multi select filters
+dynamic_filters = DynamicFilters(df, filters=['Sector', 'Industry', 'Prospect Status', 'Product'])
+dynamic_filters.display_filters(location='sidebar')
+df_filtered = dynamic_filters.filter_df()
 
 
 with st.sidebar:
@@ -462,7 +387,7 @@ with st.expander('What is this app about?'):
     This app is designed to generate an instant company research.\n
     In a matter of few clicks, a user gets a PowerPoint presentation with the company overview, SWOT analysis, financials, and value propostion tailored for the selling product. 
     The app works with the US public companies.
-    
+
     Use Case Example:\n
     Imagine working in sales for a B2B SaaS company that has hundreds of prospects and offers the following products: 
     Accounting and Planning Software, CRM, Chatbot, and Cloud Data Storage.
@@ -470,7 +395,7 @@ with st.expander('What is this app about?'):
     You can use this app to quickly filter the prospects by sector, industry, prospect status, and product. 
     Next, you can select the prospect you want to include in the presentation and click the button to generate the presentation.
     And...that's it! You have the slides ready to be shared with your team.
-    
+
     Tech Stack:\n
     • Database - Snowflake via Snowflake Connector\n
     • Data Processing - Pandas\n
@@ -480,7 +405,7 @@ with st.expander('What is this app about?'):
     • Presentation - Python-pptx\n
     ''')
 
-
+num_of_cust = df_filtered.shape[0]
 st.metric(label='Number of Prospects', value=num_of_cust)
 
 # button to create slides
@@ -488,8 +413,8 @@ ui_container = st.container()
 with ui_container:
     submit = st.button(label='Generate Presentation')
 
-# apply proper capitalization to column names and replace underscore with space
-df_filtered.columns = df_filtered.columns.str.title().str.replace('_', ' ')
+# select columns to show
+df_filtered = df_filtered[['Company Name', 'Sector', 'Industry', 'Prospect Status', 'Product']]
 
 # creating AgGrid dynamic table and setting configurations
 gb = GridOptionsBuilder.from_dataframe(df_filtered)
@@ -584,7 +509,7 @@ elif submit and response_df is not None:
 
                 # check if a logo ulr returns code 200 (working link)
                 if requests.get(logo_url).status_code == 200:
-                    #create logo image object
+                    # create logo image object
                     logo = resize_image(logo_url)
                     logo.save('logo.png')
                     logo_im = 'logo.png'
@@ -686,7 +611,8 @@ elif submit and response_df is not None:
                     sg_and_a_peers_fig.write_image("sg_and_a_peers.png")
                     sg_and_a_peers_im = 'sg_and_a_peers.png'
 
-                    add_image(prs.slides[6], image=sg_and_a_peers_im, left=Inches(0.8), width=Inches(4.8), top=Inches(0.5))
+                    add_image(prs.slides[6], image=sg_and_a_peers_im, left=Inches(0.8), width=Inches(4.8),
+                              top=Inches(0.5))
                     os.remove('sg_and_a_peers.png')
 
                     # plot operating expenses vs peers graph
@@ -913,7 +839,9 @@ elif submit and response_df is not None:
 
                     esg_df = pd.DataFrame(esg_dict)
                     # Pivot DataFrame
-                    esg_df_melted = esg_df.melt(id_vars='Type', value_vars=['Total ESG Score', 'Governance Score', 'Environment Score', 'Social Score'])
+                    esg_df_melted = esg_df.melt(id_vars='Type',
+                                                value_vars=['Total ESG Score', 'Governance Score', 'Environment Score',
+                                                            'Social Score'])
                     # run function to generate a bar chart with esg comparison
                     esg_fig = esg_plot(name=name, df=esg_df_melted)
 
