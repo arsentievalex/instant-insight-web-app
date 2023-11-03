@@ -7,7 +7,7 @@ openpyxl
 Pillow==9.3.0
 requests
 plotly
-yahooquery
+yahooquery==2.3.3
 kaleido
 openai
 snowflake-connector-python
