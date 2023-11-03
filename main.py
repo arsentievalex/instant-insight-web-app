@@ -458,7 +458,7 @@ elif submit and response_df is not None:
                 product = response_df['Product'].values[0]
 
                 # join df with response_df to get a ticker of selected prospect
-                df_ticker = pd.merge(df, response_df, left_on='Company_Name', right_on='Company Name')
+                df_ticker = pd.merge(df, response_df, left_on='Company Name', right_on='Company Name')
                 selected_ticker = df_ticker['Tickers'].values[0]
 
                 # open presentation template
@@ -884,7 +884,7 @@ elif submit and response_df is not None:
             # if there is any error, display an error message
             except Exception as e:
                 with ui_container:
-                    st.write(e)
+                    #st.write(e)
                     # get more details on error
-                    st.write(traceback.format_exc())
+                    #st.write(traceback.format_exc())
                     st.error("Oops, something went wrong, please try again or select a different prospect.")
