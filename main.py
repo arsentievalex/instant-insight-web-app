@@ -884,7 +884,7 @@ elif submit and response_df is not None:
             # if there is any error, display an error message
             except Exception as e:
                 with ui_container:
-                    # st.write(e)
+                    st.write(e)
                     # get more details on error
-                    # st.write(traceback.format_exc())
+                    st.write(traceback.format_exc())
                     st.error("Oops, something went wrong, please try again or select a different prospect.")
