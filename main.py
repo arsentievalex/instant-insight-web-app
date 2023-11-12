@@ -31,49 +31,6 @@ path = os.path.dirname(__file__)
 today = date.today()
 
 
-# get Snowflake credentials from Streamlit secrets
-# SNOWFLAKE_ACCOUNT = st.secrets["snowflake_credentials"]["SNOWFLAKE_ACCOUNT"]
-# SNOWFLAKE_USER = st.secrets["snowflake_credentials"]["SNOWFLAKE_USER"]
-# SNOWFLAKE_PASSWORD = st.secrets["snowflake_credentials"]["SNOWFLAKE_PASSWORD"]
-# SNOWFLAKE_DATABASE = st.secrets["snowflake_credentials"]["SNOWFLAKE_DATABASE"]
-# SNOWFLAKE_SCHEMA = st.secrets["snowflake_credentials"]["SNOWFLAKE_SCHEMA"]
-
-
-# @st.cache_resource
-# def get_database_session():
-#     """Returns a database session object."""
-#     return snowflake.connector.connect(
-#         account=SNOWFLAKE_ACCOUNT,
-#         user=SNOWFLAKE_USER,
-#         password=SNOWFLAKE_PASSWORD,
-#         database=SNOWFLAKE_DATABASE,
-#         schema=SNOWFLAKE_SCHEMA,
-#     )
-
-
-# @st.cache_data
-# def get_data(_conn, query):
-#     """Returns a pandas DataFrame with the data from Snowflake."""
-#     cur = conn.cursor()
-#     cur.execute(query)
-
-#     # Fetch the result as a pandas DataFrame
-#     column_names = [col[0] for col in cur.description]
-#     data = cur.fetchall()
-#     df = pd.DataFrame(data, columns=column_names)
-
-#     # Close the connection to Snowflake
-#     cur.close()
-#     conn.close()
-#     return df
-
-
-@st.cache_data
-def get_data():
-    df = pd.read_csv('prospects.csv')
-    return df
-
-
 def resize_image(url):
     """function to resize logos while keeping aspect ratio. Accepts URL as an argument and return an image object"""
 
@@ -355,12 +312,11 @@ def no_data_plot():
     return fig
 
 
-# Get the data from Snowflake
-# conn = get_database_session()
+conn = st.connection("snowflake")
+df = conn.query("SELECT * from prospects;", ttl=600)
 
-# query = "SELECT * FROM us_prospects LIMIT 500;"
-
-df = get_data()
+# Fix column names. Replace underscore with space, lowercase column names, and capitalize first words
+df.columns = df.columns.str.replace('_', ' ').str.lower().str.title()
 
 # create sidebar filters
 st.sidebar.write('**Use filters to select prospects** 👇')
@@ -884,7 +840,7 @@ elif submit and response_df is not None:
             # if there is any error, display an error message
             except Exception as e:
                 with ui_container:
-                    #st.write(e)
+                    st.write(e)
                     # get more details on error
-                    #st.write(traceback.format_exc())
+                    st.write(traceback.format_exc())
                     st.error("Oops, something went wrong, please try again or select a different prospect.")
