@@ -168,7 +168,7 @@ def get_financials(df, col_name, metric_name):
 def generate_gpt_response(gpt_input, max_tokens):
     """function to generate a response from GPT-3. Takes input and max tokens as arguments and returns a response"""
     # Create an instance of the OpenAI class
-    chat = ChatOpenAI(openai_api_key=st.secrets["openai_credentials"]["API_KEY"], model='gpt-3.5-turbo-0613',
+    chat = ChatOpenAI(openai_api_key=st.secrets["openai_credentials"]["API_KEY"], model='gpt-4-1106-preview',
                       temperature=0, max_tokens=max_tokens)
 
     # Generate a response from the model
