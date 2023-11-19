@@ -621,13 +621,13 @@ elif submit and response_df is not None:
                 ############################################################################################################
                 # create strengths and weaknesses slide
 
-                input_swot = """Create a brief SWOT analysis of {} company with ticker {}?
-                                Return output as a Python dictionary with the following keys: Strengths, Weaknesses, 
-                                Opportunities, Threats as keys and analysis as values.
-                                Do not return anything else."""
-
-                input_swot = input_swot.format(name, selected_ticker)
-
+                input_swot = f"""
+                Create a SWOT analysis of {name} company with ticker {selected_ticker}
+                Return output as a Python dictionary with the following keys: Strengths, Weaknesses, 
+                Opportunities, Threats. The values should be a brief description of each in string format.
+                Do not return anything else. Be concise and specific.
+                """
+                
                 # return response from GPT-3
                 gpt_swot = generate_gpt_response(input_swot, 1000)
 
