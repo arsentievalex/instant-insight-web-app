@@ -526,7 +526,7 @@ elif submit and response_df is not None:
                 ############################################################################################################
                 # create competitors slide
                 input_competitors = """What are the top competitors of {} company with ticker {}?
-                                    Provide up to 4 most relevant public competitors comparable by revenue and market cap.
+                                    Provide up to 4 most relevant public US competitors comparable by revenue and market cap.
                                     Return output as a Python dictionary with company name as key and ticker as value.
                                     Do not return anything else."""
 
