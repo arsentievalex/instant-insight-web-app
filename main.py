@@ -444,6 +444,8 @@ elif submit and response_df is not None:
                 comp_slide = prs.slides[6]
                 esg_slide = prs.slides[7]
 
+                st.write('1st slide')
+
                 # initiate a dictionary of placeholders and values to replace
                 replaces_1 = {
                     '{company}': name,
@@ -479,6 +481,8 @@ elif submit and response_df is not None:
                 # create slides with financial plots
                 # get financial data
                 fin_df = ticker.all_financial_data()
+
+                st.write('2st slide')
 
                 # plot stock price
                 stock_df = get_stock(ticker=ticker, period='5y', interval='1mo')
@@ -525,6 +529,8 @@ elif submit and response_df is not None:
                     pass
 
                 ############################################################################################################
+                st.write('3st slide')
+                
                 # create competitors slide
                 input_competitors = """What are the top competitors of {} company with ticker {}?
                                     Provide up to 4 most relevant public US competitors comparable by revenue and market cap.
@@ -620,6 +626,7 @@ elif submit and response_df is not None:
                             os.remove('logo.png')
 
                 ############################################################################################################
+                st.write('4st slide')
                 # create strengths and weaknesses slide
 
                 input_swot = f"""
@@ -650,6 +657,7 @@ elif submit and response_df is not None:
                 replace_text(replaces_3, s_w_slide)
 
                 ############################################################################################
+                st.write('5st slide')
 
                 # create value prop slide
                 input_vp = """"Create a brief value proposition using Value Proposition Canvas framework for {product} for 
@@ -679,6 +687,7 @@ elif submit and response_df is not None:
                 replace_text(replaces_4, vp_slide)
 
                 ############################################################################################
+                st.write('6st slide')
                 # key people slide
                 key_people = ticker.asset_profile[selected_ticker]['companyOfficers']
 
@@ -716,6 +725,7 @@ elif submit and response_df is not None:
                 replace_text(replaces_6, key_people_slide)
 
                 ############################################################################################
+                st.write('7st slide')
                 # corporate news
                 news_df = ticker.corporate_events
 
@@ -770,6 +780,7 @@ elif submit and response_df is not None:
                 replace_text(replaces_7, key_people_slide)
 
                 ############################################################################################
+                st.write('8st slide')
                 # ESG slide
                 # get ESG scores from Yahoo Finance
                 try:
@@ -823,6 +834,7 @@ elif submit and response_df is not None:
                 replace_text(replaces_8, esg_slide)
 
                 ###########################################################################################
+                st.write('preparing pptx')
                 # create file name
                 filename = '{} {}.pptx'.format(name, today)
 
