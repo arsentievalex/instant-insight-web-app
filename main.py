@@ -313,7 +313,8 @@ def no_data_plot():
 
 
 conn = st.connection("snowflake")
-df = conn.query("SELECT * from prospects LIMIT 1000;", ttl=600)
+#df = conn.query("SELECT * from prospects LIMIT 1000;", ttl=600)
+df = pd.read_csv('prospects.csv')
 
 # Fix column names. Replace underscore with space, lowercase column names, and capitalize first words
 df.columns = df.columns.str.replace('_', ' ').str.lower().str.title()
