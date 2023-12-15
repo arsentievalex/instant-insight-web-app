@@ -1,0 +1,1337 @@
+Ticker,Company Name,Sector,Industry Group,Industry,Sub Industry,Prospect Status,Product
+TRC,Tejon Ranch Co,Real Estate,Real Estate,Real Estate Management & Development,Diversified Real Estate Activities ,Opportunity,Cloud Data Storage
+KBR,Kbr Inc,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Unqualified Lead,Cloud Data Storage
+WY,Weyerhaeuser Co,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Opportunity,Chatbot
+PCH,Potlatchdeltic Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Cloud Data Storage
+GCI,Gannett Co Inc,Communication Services,Media & Entertainment,Media,Publishing,Sales Accepted Lead (SAL),Planning Software
+LEE,Lee Enterprises Inc,Communication Services,Media & Entertainment,Media,Publishing,Unqualified Lead,Planning Software
+NYT,New York Times Co  -Cl A,Communication Services,Media & Entertainment,Media,Publishing,Sales Qualified Lead (SQL),CRM
+NWSA,News Corp,Communication Services,Media & Entertainment,Media,Publishing,Marketing Qualified Lead (MQL),Chatbot
+SCHL,Scholastic Corp,Communication Services,Media & Entertainment,Media,Publishing,Sales Qualified Lead (SQL),Accounting Software
+VALU,Value Line Inc,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,Opportunity,Planning Software
+VRME,Verifyme Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),Accounting Software
+OCC,Optical Cable Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Cloud Data Storage
+DDD,3D Systems Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Planning Software
+IVAC,Intevac Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Planning Software
+ACMR,Acm Research Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Accepted Lead (SAL),Cloud Data Storage
+ASYS,Amtech Systems Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Accepted Lead (SAL),Cloud Data Storage
+AMAT,Applied Materials Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Opportunity,Planning Software
+ACLS,Axcelis Technologies Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Marketing Qualified Lead (MQL),Accounting Software
+CVV,Cvd Equipment Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Marketing Qualified Lead (MQL),Planning Software
+ENTG,Entegris Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),Planning Software
+KLIC,Kulicke & Soffa Industries,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,CRM
+LRCX,Lam Research Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),Planning Software
+TRT,Trio-Tech International,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Accepted Lead (SAL),Planning Software
+VECO,Veeco Instruments Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Cloud Data Storage
+HPQ,Hp Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Marketing Qualified Lead (MQL),Cloud Data Storage
+SMCI,Super Micro Computer Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Marketing Qualified Lead (MQL),CRM
+DELL,Dell Technologies Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Planning Software
+HPE,Hewlett Packard Enterprise,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Planning Software
+OSS,One Stop Systems Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Accounting Software
+NTAP,Netapp Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Unqualified Lead,Planning Software
+PSTG,Pure Storage Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Unqualified Lead,Accounting Software
+QMCO,Quantum Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Accounting Software
+WDC,Western Digital Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),CRM
+ATEN,A10 Networks Inc,Information Technology,Software & Services,Software,Systems Software,Opportunity,Cloud Data Storage
+DTSS,Datasea Inc,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),Accounting Software
+ANET,Arista Networks Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Accounting Software
+CASA,Casa Systems Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Unqualified Lead,Chatbot
+CSCO,Cisco Systems Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Accounting Software
+DGII,Digi International Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Chatbot
+EXTR,Extreme Networks Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Marketing Qualified Lead (MQL),CRM
+INFN,Infinera Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Chatbot
+JNPR,Juniper Networks Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Unqualified Lead,Accounting Software
+LTRX,Lantronix Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Cloud Data Storage
+LITE,Lumentum Holdings Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,CRM
+NTGR,Netgear Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Cloud Data Storage
+VIAV,Viavi Solutions Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Accounting Software
+FTNT,Fortinet Inc,Information Technology,Software & Services,Software,Systems Software,Opportunity,Planning Software
+MITK,Mitek Systems Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Accounting Software
+ALOT,Astronova Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Accounting Software
+KODK,Eastman Kodak Co,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Marketing Qualified Lead (MQL),Planning Software
+TACT,Transact Technologies Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Chatbot
+XRX,Xerox Holdings Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Accounting Software
+ZBRA,Zebra Technologies Cp  -Cl A,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,Cloud Data Storage
+DBD,Diebold Nixdorf Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Chatbot
+PAR,Par Technology Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Marketing Qualified Lead (MQL),CRM
+IDN,Intellicheck Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,Accounting Software
+CODI,Compass Diversified Holdings,Financials,Diversified Financials,Diversified Financial Services,Multi-Sector Holdings,Marketing Qualified Lead (MQL),CRM
+LFUS,Littelfuse Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Accepted Lead (SAL),CRM
+GNSS,Genasys Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),CRM
+DGLY,Digital Ally Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,Chatbot
+ROKU,Roku Inc,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Opportunity,Cloud Data Storage
+ADTN,Adtran Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Marketing Qualified Lead (MQL),Chatbot
+CALX,Calix Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Cloud Data Storage
+CIEN,Ciena Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Unqualified Lead,Accounting Software
+INSG,Inseego Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Unqualified Lead,Planning Software
+AVNW,Aviat Networks Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Chatbot
+BKTI,Bk Technologies Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Planning Software
+CAMP,Calamp Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Planning Software
+CLRO,Clearone Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Marketing Qualified Lead (MQL),Cloud Data Storage
+COMM,Commscope Holding Co Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Unqualified Lead,Cloud Data Storage
+CMTL,Comtech Telecommun,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Cloud Data Storage
+SATS,Echostar Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Chatbot
+EMKR,Emcore Corp,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Cloud Data Storage
+HLIT,Harmonic Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Marketing Qualified Lead (MQL),Planning Software
+MSI,Motorola Solutions Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Cloud Data Storage
+PCTI,Pctel Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,CRM
+UI,Ubiquiti Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Chatbot
+VSAT,Viasat Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Accounting Software
+AAPL,Apple Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),Accounting Software
+SCKT,Socket Mobile Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Unqualified Lead,Planning Software
+SONM,Sonim Technologies Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Accepted Lead (SAL),CRM
+AIRG,Airgain Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Accepted Lead (SAL),CRM
+WTT,Wireless Telecom Group Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Marketing Qualified Lead (MQL),Accounting Software
+OSPN,Onespan Inc,Information Technology,Software & Services,Software,Systems Software,Unqualified Lead,Chatbot
+APDN,Applied Dna Sciences Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),Planning Software
+ARLO,Arlo Technologies Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),CRM
+NSSC,Napco Security Tech Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,Planning Software
+UUU,Universal Security Instrumnt,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,Chatbot
+BDC,Belden Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Unqualified Lead,Planning Software
+CTS,Cts Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Sales Accepted Lead (SAL),Chatbot
+KTCC,Key Tronic Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Unqualified Lead,Planning Software
+KN,Knowles Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Marketing Qualified Lead (MQL),CRM
+VSH,Vishay Intertechnology Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Accepted Lead (SAL),Chatbot
+BHE,Benchmark Electronics Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Sales Qualified Lead (SQL),CRM
+JBL,Jabil Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Opportunity,Planning Software
+PLXS,Plexus Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Marketing Qualified Lead (MQL),CRM
+ROG,Rogers Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Accepted Lead (SAL),Planning Software
+SANM,Sanmina Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Unqualified Lead,Chatbot
+SGMA,Sigmatron International Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Sales Accepted Lead (SAL),Accounting Software
+TTMI,Ttm Technologies Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Sales Accepted Lead (SAL),Planning Software
+XPER,Xperi Holding Corp,Information Technology,Software & Services,Software,Systems Software,Sales Qualified Lead (SQL),CRM
+AAOI,Applied Optoelectronics Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Accepted Lead (SAL),Chatbot
+IPGP,Ipg Photonics Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Opportunity,Chatbot
+KE,Kimball Electronics Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Marketing Qualified Lead (MQL),Chatbot
+LASR,Nlight Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),Cloud Data Storage
+VPG,Vishay Precision Group Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Qualified Lead (SQL),Accounting Software
+AMD,Advanced Micro Devices,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Planning Software
+AMKR,Amkor Technology Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Accepted Lead (SAL),Planning Software
+ADI,Analog Devices,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Planning Software
+ATOM,Atomera Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Chatbot
+AXTI,Axt Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Accounting Software
+AVGO,Broadcom Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Chatbot
+CRUS,Cirrus Logic Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),CRM
+DIOD,Diodes Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Sales Qualified Lead (SQL),Chatbot
+ENPH,Enphase Energy Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Planning Software
+MRAM,Everspin Technologies Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Planning Software
+GSIT,Gsi Technology Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Sales Accepted Lead (SAL),Accounting Software
+PI,Impinj Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Accounting Software
+INTC,Intel Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Chatbot
+KOPN,Kopin Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,Planning Software
+LSCC,Lattice Semiconductor Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),CRM
+MTSI,M/Acom Technology Solutions,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Cloud Data Storage
+MX,Magnachip Semiconductor Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Accounting Software
+MXL,Maxlinear Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,CRM
+MCHP,Microchip Technology Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,Accounting Software
+MU,Micron Technology Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Cloud Data Storage
+MPWR,Monolithic Power Systems Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),CRM
+NVEC,Nve Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,Planning Software
+NVDA,Nvidia Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Sales Qualified Lead (SQL),Cloud Data Storage
+ON,On Semiconductor Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Sales Accepted Lead (SAL),Accounting Software
+PLAB,Photronics Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Accepted Lead (SAL),Chatbot
+PXLW,Pixelworks Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Sales Accepted Lead (SAL),Cloud Data Storage
+POWI,Power Integrations Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,CRM
+QRVO,Qorvo Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Accounting Software
+QCOM,Qualcomm Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Planning Software
+QUIK,Quicklogic Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Planning Software
+RBCN,Rubicon Technology Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Chatbot
+LEDS,Semileds Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Chatbot
+SMTC,Semtech Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,CRM
+SLAB,Silicon Laboratories Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,CRM
+SITM,Sitime Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,CRM
+SWKS,Skyworks Solutions Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,CRM
+SEDG,Solaredge Technologies Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),Planning Software
+SYNA,Synaptics Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Cloud Data Storage
+UCTT,Ultra Clean Holdings Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),CRM
+OLED,Universal Display Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Cloud Data Storage
+BELFB,Bel Fuse Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Unqualified Lead,Cloud Data Storage
+APH,Amphenol Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Qualified Lead (SQL),Chatbot
+MEI,Methode Electronics Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Sales Accepted Lead (SAL),CRM
+RFIL,R F Industries Ltd,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Opportunity,CRM
+DMRC,Digimarc Corp,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Chatbot
+CLFD,Clearfield Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Unqualified Lead,CRM
+AKTS,Akoustis Technologies Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Opportunity,Accounting Software
+GLW,Corning Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Accepted Lead (SAL),Accounting Software
+LGL,Lgl Group Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Unqualified Lead,Planning Software
+MVIS,Microvision Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),Chatbot
+AEIS,Advanced Energy Inds Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Opportunity,CRM
+EMAN,Emagin Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Marketing Qualified Lead (MQL),Accounting Software
+CODA,Coda Octopus Group Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Marketing Qualified Lead (MQL),Chatbot
+PWFL,Powerfleet Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,Accounting Software
+CGNX,Cognex Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Qualified Lead (SQL),Cloud Data Storage
+ELSE,Electro-Sensors Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,CRM
+SMIT,Schmitt Industries Inc/Or,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Qualified Lead (SQL),Planning Software
+MKSI,Mks Instruments Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),Chatbot
+ONTO,Onto Innovation Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Opportunity,Chatbot
+BMI,Badger Meter Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,Cloud Data Storage
+ITRI,Itron Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,Cloud Data Storage
+DAIO,Data I/O Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Sales Qualified Lead (SQL),Cloud Data Storage
+FEIM,Frequency Electronics Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,Cloud Data Storage
+KEYS,Keysight Technologies Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),Accounting Software
+AEHR,Aehr Test Systems,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Accounting Software
+COHU,Cohu Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Opportunity,Cloud Data Storage
+FORM,Formfactor Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),CRM
+INTT,Intest Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Cloud Data Storage
+TER,Teradyne Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Sales Qualified Lead (SQL),Chatbot
+LPTH,Lightpath Technologies Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Marketing Qualified Lead (MQL),Accounting Software
+LUNA,Luna Innovations Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Sales Accepted Lead (SAL),CRM
+KLAC,Kla Corp,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Opportunity,Cloud Data Storage
+BKYI,Bio-Key International Inc,Information Technology,Software & Services,Software,Systems Software,Opportunity,Cloud Data Storage
+FARO,Faro Technologies Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,Planning Software
+TRMB,Trimble Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,Accounting Software
+OSIS,Osi Systems Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Marketing Qualified Lead (MQL),Cloud Data Storage
+AVID,Avid Technology Inc,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Sales Qualified Lead (SQL),Accounting Software
+BOXL,Boxlight Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Chatbot
+DAKT,Daktronics Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,CRM
+T,At&T Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,Marketing Qualified Lead (MQL),Planning Software
+ATNI,Atn International Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,Unqualified Lead,Accounting Software
+VZ,Verizon Communications Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,Sales Qualified Lead (SQL),CRM
+SHEN,Shenandoah Telecommun Co,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,Unqualified Lead,Cloud Data Storage
+SPOK,Spok Holdings Inc,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,Marketing Qualified Lead (MQL),Cloud Data Storage
+S,Sprint Corp,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,Sales Accepted Lead (SAL),Cloud Data Storage
+TMUS,T-Mobile Us Inc,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,Sales Accepted Lead (SAL),Planning Software
+USM,Us Cellular Corp,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,Marketing Qualified Lead (MQL),Cloud Data Storage
+CCOI,Cogent Communications Hldgs,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Alternative Carriers,Sales Qualified Lead (SQL),Planning Software
+CNSL,Consolidated Comm Hldgs Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,Unqualified Lead,CRM
+IDT,Idt Corp,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,Opportunity,Planning Software
+OOMA,Ooma Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Integrated Telecommunication Services,Marketing Qualified Lead (MQL),Cloud Data Storage
+WOW,Wideopenwest Inc,Communication Services,Media & Entertainment,Media,Cable & Satellite,Sales Qualified Lead (SQL),Planning Software
+BBGI,Beasley Broadcast Group Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Qualified Lead (SQL),Cloud Data Storage
+CMLS,Cumulus Media Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Unqualified Lead,Cloud Data Storage
+IHRT,Iheartmedia Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Opportunity,Planning Software
+LSXMK,Liberty Media Siriusxm Group,Communication Services,Media & Entertainment,Media,Cable & Satellite,Unqualified Lead,Chatbot
+MDIA,Mediaco Holding Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Marketing Qualified Lead (MQL),Accounting Software
+SGA,Saga Communications  -Cl A,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Qualified Lead (SQL),Planning Software
+SALM,Salem Media Group Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Unqualified Lead,CRM
+SIRI,Sirius Xm Holdings Inc,Communication Services,Media & Entertainment,Media,Cable & Satellite,Sales Accepted Lead (SAL),Cloud Data Storage
+TSQ,Townsquare Media Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Unqualified Lead,CRM
+UONEK,Urban One Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Opportunity,Cloud Data Storage
+AMCX,Amc Networks Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Qualified Lead (SQL),CRM
+EVC,Entravision Communications,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Qualified Lead (SQL),CRM
+SSP,Ew Scripps  -Cl A,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Qualified Lead (SQL),Cloud Data Storage
+FOXA,Fox Corp,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Accepted Lead (SAL),Cloud Data Storage
+GTN,Gray Television Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Opportunity,Accounting Software
+NXST,Nexstar Media Group,Communication Services,Media & Entertainment,Media,Broadcasting,Unqualified Lead,CRM
+SBGI,Sinclair Broadcast Gp  -Cl A,Communication Services,Media & Entertainment,Media,Broadcasting,Marketing Qualified Lead (MQL),Planning Software
+TGNA,Tegna Inc,Communication Services,Media & Entertainment,Media,Broadcasting,Sales Accepted Lead (SAL),CRM
+ATUS,Altice Usa Inc,Communication Services,Media & Entertainment,Media,Cable & Satellite,Opportunity,Cloud Data Storage
+CABO,Cable One Inc,Communication Services,Media & Entertainment,Media,Cable & Satellite,Sales Qualified Lead (SQL),Cloud Data Storage
+CHTR,Charter Communications Inc,Communication Services,Media & Entertainment,Media,Cable & Satellite,Opportunity,CRM
+CMCSA,Comcast Corp,Communication Services,Media & Entertainment,Media,Cable & Satellite,Marketing Qualified Lead (MQL),Accounting Software
+DISH,Dish Network Corp,Communication Services,Media & Entertainment,Media,Cable & Satellite,Unqualified Lead,Planning Software
+DIS,Disney (Walt) Co,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Accepted Lead (SAL),Accounting Software
+EGHT,8X8 Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Chatbot
+KVHI,Kvh Industries Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Cloud Data Storage
+VISL,Vislink Technologies Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Planning Software
+ATEX,Anterix Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Alternative Carriers,Opportunity,Planning Software
+GSAT,Globalstar Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Alternative Carriers,Unqualified Lead,Chatbot
+IRDM,Iridium Communications Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Alternative Carriers,Opportunity,CRM
+GOGO,Gogo Inc,Communication Services,Telecommunication Services,Wireless Telecommunication Services,Wireless Telecommunication Services,Opportunity,CRM
+INPX,Inpixon,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Sales Accepted Lead (SAL),Planning Software
+BSQR,Bsquare Corp,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Chatbot
+CDW,Cdw Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Marketing Qualified Lead (MQL),Accounting Software
+PLUS,Eplus Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Sales Qualified Lead (SQL),CRM
+NSIT,Insight Enterprises Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Sales Qualified Lead (SQL),Cloud Data Storage
+SCSC,Scansource Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Unqualified Lead,CRM
+SNX,Synnex Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Sales Accepted Lead (SAL),CRM
+AMRK,A-Mark Precious Metals Inc,Financials,Diversified Financials,Diversified Financial Services,Specialized Finance,Unqualified Lead,Chatbot
+TESS,Tessco Technologies Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Opportunity,Chatbot
+AEY,Addvantage Technologies Gp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Opportunity,Planning Software
+ARW,Arrow Electronics Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Sales Accepted Lead (SAL),Cloud Data Storage
+AVT,Avnet Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Marketing Qualified Lead (MQL),Cloud Data Storage
+TAIT,Taitron Components  -Cl A,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Unqualified Lead,Chatbot
+CNNE,Cannae Holdings Inc,Financials,Diversified Financials,Diversified Financial Services,Multi-Sector Holdings,Marketing Qualified Lead (MQL),Cloud Data Storage
+EZPW,Ezcorp Inc  -Cl A,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Marketing Qualified Lead (MQL),Planning Software
+FCFS,Firstcash Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Marketing Qualified Lead (MQL),Accounting Software
+CNXN,Pc Connection Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Technology Distributors,Marketing Qualified Lead (MQL),Planning Software
+SRCE,1St Source Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+AMAL,Amalgamated Bk New York N Y,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+AMTB,Amerant Bancorp Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+AMNB,American Natl Bankshares,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Chatbot
+ABCB,Ameris Bancorp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+ATLO,Ames National Corp,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+AROW,Arrow Financial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+ASB,Associated Banc-Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Cloud Data Storage
+AUB,Atlantic Union Bankshrs Crp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+AUBN,Auburn National Bancorp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+BANC,Banc Of California Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+BANF,Bancfirst Corp/Ok,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+TBBK,Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+BFC,Bank First Corp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+BAC,Bank Of America Corp,Financials,Banks,Banks,Diversified Banks,Sales Accepted Lead (SAL),Accounting Software
+BOH,Bank Of Hawaii Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+BMRC,Bank Of Marin Bancorp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+BPRN,Bank Of Princeton,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+BOTJ,Bank Of The James Financial,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+OZK,Bank Ozk,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+BKSC,Bank South Carolina Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+BSVN,Bank7 Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+BFIN,Bankfinancial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+BKU,Bankunited Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+BWFG,Bankwell Financial Group Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Cloud Data Storage
+BANR,Banner Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+BHB,Bar Harbor Bankshares,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+BCML,Baycom Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+BCBP,Bcb Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+BHLB,Berkshire Hills Bancorp Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+BRBS,Blue Ridge Bankshares Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+BOKF,Bok Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+BRKL,Brookline Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+BFST,Business First Bancshs Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+BY,Byline Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+CFFI,C&F Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+CADE,Cadence Bancorporation,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+CATC,Cambridge Bancorp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+CAC,Camden National Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+CBNK,Capital Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+CCBG,Capital City Bk Group Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+CSTR,Capstar Financial Hldgs Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+CARE,Carter Bank & Trust,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+CATY,Cathay General Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+CBFV,Cb Financial Services Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+CPF,Central Pacific Financial Cp,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+CVCY,Central Valley Cmnty Bancorp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+CHMG,Chemung Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+CZNC,Citizens & Northern Corp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+CZWI,Citizens Community Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+CFG,Citizens Financial Group Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+CIZN,Citizens Holding Co,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+CIVB,Civista Bancshares Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+CCNE,Cnb Financial Corp/Pa,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+CVLY,Codorus Valley Bancorp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+COLB,Columbia Banking System Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Chatbot
+CMA,Comerica Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+CBSH,Commerce Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+CBU,Community Bank System Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+TCFC,Community Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+CTBI,Community Trust Bancorp Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Cloud Data Storage
+CFB,Crossfirst Bankshares Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+CFR,Cullen/Frost Bankers Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+CUBI,Customers Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+CVBF,Cvb Financial Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Cloud Data Storage
+EWBC,East West Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+EQBK,Equity Bancshares Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+ESQ,Esquire Fincl Hold Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+EVBN,Evans Bancorp Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+FNB,F N B Corp/Fl,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+FMAO,Farmers & Merchants Bcp/Oh,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+FMNB,Farmers Natl Banc Corp/Oh,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+FBK,Fb Financial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+FITB,Fifth Third Bancorp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+FISI,Financial Institutions Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+FNLC,First Bancorp Inc/Me,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+FBP,First Bancorp P R,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+FBNC,First Bancorp/Nc,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+FBMS,First Bancshares Inc/Ms,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+FRBA,First Bank,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+BUSE,First Busey Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+FBIZ,First Business Finl Srv Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+FCAP,First Capital Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+FCNCA,First Citizens Bancsh  -Cl A,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+FCBC,First Cmnty Bancshares Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+FCF,First Commonwlth Finl Cp/Pa,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+FCCO,First Community Corp/Sc,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+THFF,First Financial Corp/In,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+FFNW,First Financial Northwest,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+FFBC,First Finl Bancorp Inc/Oh,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+FFIN,First Finl Bankshares Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+FFWM,First Foundation Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+FGBI,First Guaranty Bancshares,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+FHB,First Hawaiian Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+FHN,First Horizon National Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+INBK,First Internet Bancorp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+FIBK,First Interstate Bancsystem,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+FLIC,First Long Island Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+FRME,First Merchants Corp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+FMBH,First Mid Bancshares Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+FXNC,First National Corp/Va,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+FRC,First Republic Bank,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+FSFG,First Savings Financial Gp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+FUNC,First United Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+FUSB,First Us Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+MYFW,First Wstrn Finncil Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+FFIC,Flushing Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+FNCB,Fncb Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+FRAF,Franklin Financial Svcs Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+FULT,Fulton Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+FVCB,Fvcbankcorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+GABC,German American Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+GBCI,Glacier Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+GSBC,Great Southern Bancorp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+GNTY,Guaranty Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+HWC,Hancock Whitney Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+HAFC,Hanmi Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+HONE,Harborone Bancorp Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Cloud Data Storage
+HWBK,Hawthorn Bancshares Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+HBT,Hbt Financial Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+HTLF,Heartland Financial Usa Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+HTBK,Heritage Commerce Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+HFWA,Heritage Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+HOMB,Home Bancshares Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+HTBI,Hometrust Bancshares Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+HOPE,Hope Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+HBNC,Horizon Bancorp Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+HBAN,Huntington Bancshares,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+INDB,Independent Bank Corp/Ma,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+IBCP,Independent Bank Corp/Mi,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+IBTX,Independent Bk Grp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+IBOC,Intl Bancshares Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+ISTR,Investar Holding Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+JPM,Jpmorgan Chase & Co,Financials,Banks,Banks,Diversified Banks,Marketing Qualified Lead (MQL),CRM
+KEY,Keycorp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+LBAI,Lakeland Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+LKFN,Lakeland Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+LARK,Landmark Bancorp Inc/Ks,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+LCNB,Lcnb Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+LMST,Limestone Bancorp Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+LOB,Live Oak Bancshares Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+MTB,M & T Bank Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+MCBC,Macatawa Bank Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+MNSB,Mainstreet Bancshares Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+MLVF,Malvern Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+MBWM,Mercantile Bank Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+MCBS,Metrocity Bankshares Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+MCB,Metropolitan Bank Hldng,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Cloud Data Storage
+MPB,Mid Penn Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+MBCN,Middlefield Banc Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+MSBI,Midland States Bancorp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+MOFG,Midwestone Financial Group,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+MVBF,Mvb Financial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+NBTB,N B T Bancorp Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+NBHC,National Bank Hldgs Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+NKSH,National Bankshares Inc Va,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+NRIM,Northrim Bancorp Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+NWFL,Norwood Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+OVLY,Oak Valley Bancorp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+OFG,Ofg Bancorp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+OVBC,Ohio Valley Banc Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+ONB,Old National Bancorp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+OPOF,Old Point Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Chatbot
+OPHC,Optimumbank Holdings Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+OBNK,Origin Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+ORRF,Orrstown Financial Svcs Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+PPBI,Pacific Premier Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+PACW,Pacwest Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+PRK,Park National Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+PKBK,Parke Bancorp Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+PBHC,Pathfinder Bancorp Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+PNBK,Patriot National Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+PCB,Pcb Bancorp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+PGC,Peapack-Gladstone Finan Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+PWOD,Penns Woods Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+PEBO,Peoples Bancorp Inc/Oh,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+PEBK,Peoples Bancorp Nc Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+PFIS,Peoples Financial Services,Financials,Banks,Banks,Regional Banks,Unqualified Lead,CRM
+PNFP,Pinnacle Finl Partners Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+PLBC,Plumas Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+PNC,Pnc Financial Svcs Group Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+BPOP,Popular Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+PFBC,Preferred Bank Los Angeles,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+PB,Prosperity Bancshares Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+QCRH,Qcr Holdings Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+RBB,Rbb Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,Accounting Software
+RRBI,Red River Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+RF,Regions Financial Corp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+RNST,Renasant Corp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Chatbot
+RBCAA,Republic Bancorp Inc/Ky,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+FRBK,Republic First Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+RMBI,Richmond Mutual Banco Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+STBA,S & T Bancorp Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+SAL,Salisbury Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+SASR,Sandy Spring Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Planning Software
+SBFG,Sb Financial Group Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+SBCF,Seacoast Banking Corp/Fl,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+SFBS,Servisfirst Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+SHBI,Shore Bancshares Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+BSRR,Sierra Bancorp/Ca,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+SBNY,Signature Bank/Ny,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+SI,Silvergate Capital Corp,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+SFNC,Simmons First Natl Cp  -Cl A,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+SMBK,Smartfinancial Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Cloud Data Storage
+SPFI,South Plains Financial Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+SSB,South State Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+SFST,Southern First Bankshares,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Chatbot
+SBSI,Southside Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+SYBT,Stock Yards Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Accounting Software
+SMMF,Summit Financial Group Inc,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+SSBI,Summit State Bank,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Chatbot
+SIVB,Svb Financial Group,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+SNV,Synovus Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+TCBI,Texas Capital Bancshares Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+TMP,Tompkins Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+TOWN,Townebank,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+TCBK,Trico Bancshares,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+TFC,Truist Financial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+TRMK,Trustmark Corp,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+USB,U S Bancorp,Financials,Banks,Banks,Diversified Banks,Sales Qualified Lead (SQL),Chatbot
+UMBF,Umb Financial Corp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Planning Software
+UNB,Union Bankshares Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+UBSI,United Bankshares Inc/Wv,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+UCBI,United Community Banks Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Planning Software
+UBFO,United Security Bancshars Ca,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+UNTY,Unity Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+UVSP,Univest Financial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+VLY,Valley National Bancorp,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+VBTX,Veritex Holdings Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+VBFC,Village Bank And Trust Finl,Financials,Banks,Banks,Regional Banks,Opportunity,CRM
+WASH,Washington Tr Bancorp Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Accounting Software
+WBS,Webster Financial Corp,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+WFC,Wells Fargo & Co,Financials,Banks,Banks,Diversified Banks,Marketing Qualified Lead (MQL),CRM
+WSBC,Wesbanco Inc,Financials,Banks,Banks,Regional Banks,Opportunity,Planning Software
+WTBA,West Bancorporation Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),CRM
+WABC,Westamerica Bancorporation,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+WAL,Western Alliance Bancorp,Financials,Banks,Banks,Regional Banks,Unqualified Lead,Accounting Software
+WTFC,Wintrust Financial Corp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Chatbot
+ZION,Zions Bancorporation Na,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+BWB,Bridgewater Bancshares,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Planning Software
+HMST,Homestreet Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Marketing Qualified Lead (MQL),Cloud Data Storage
+LBC,Luther Burbank Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Accounting Software
+MBIN,Merchants Bancorp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Planning Software
+WAFD,Washington Federal Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Chatbot
+BK,Bank Of New York Mellon Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Cloud Data Storage
+NTRS,Northern Trust Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,CRM
+STT,State Street Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Chatbot
+DCOM,Dime Community Bancshares,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Planning Software
+EBMT,Eagle Bancorp Montana Inc,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),Accounting Software
+OCFC,Oceanfirst Financial Corp,Financials,Banks,Banks,Regional Banks,Opportunity,Chatbot
+SFBC,Sound Financial Bancorp Inc,Financials,Banks,Banks,Regional Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+AX,Axos Financial Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Chatbot
+CFFN,Capitol Federal Finl Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Chatbot
+CARV,Carver Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Accounting Software
+CFBK,Central Federal Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),CRM
+CNNB,Cincinnati Bancorp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Planning Software
+CLBK,Columbia Financial Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Accounting Software
+FFBW,Ffbw Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Cloud Data Storage
+GCBC,Greene County Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Chatbot
+HMNF,Hmn Financial Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Accounting Software
+HFBL,Home Federal Bancorp Inc/La,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Cloud Data Storage
+IROQ,If Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Cloud Data Storage
+LSBK,Lake Shore Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Chatbot
+CASH,Meta Financial Group Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Chatbot
+MSVB,Mid-Southern Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Chatbot
+NFBK,Northfield Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),CRM
+NWBI,Northwest Bancshares Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Accounting Software
+OFED,Oconee Federal Financial Cp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),CRM
+OCN,Ocwen Financial Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Chatbot
+PDLB,Pdl Community Bancorp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),CRM
+PROV,Provident Financial Holdings,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Cloud Data Storage
+RVSB,Riverview Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Accounting Software
+SBT,Sterling Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Marketing Qualified Lead (MQL),Planning Software
+TBNK,Territorial Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),CRM
+TFSL,Tfs Financial Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Cloud Data Storage
+TRST,Trustco Bank Corp/Ny,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Planning Software
+WSBF,Waterstone Financial Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Chatbot
+WNEB,Western New Eng Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,CRM
+WSFS,Wsfs Financial Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Chatbot
+FNWB,First Northwest Bancrp,Financials,Banks,Banks,Regional Banks,Sales Qualified Lead (SQL),CRM
+BSBK,Bogota Financial Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Cloud Data Storage
+ESSA,Essa Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Chatbot
+FSBW,Fs Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Accounting Software
+HIFS,Hingham Instn For Savings,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Cloud Data Storage
+KRNY,Kearny Financial Corp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Marketing Qualified Lead (MQL),Planning Software
+MGYR,Magyar Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Unqualified Lead,Accounting Software
+NYCB,New York Cmnty Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),CRM
+PVBC,Provident Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Cloud Data Storage
+PFS,Provident Financial Svcs Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),CRM
+RBKB,Rhinebeck Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Planning Software
+SMBC,Southern Missouri Bancp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Marketing Qualified Lead (MQL),Chatbot
+TSBK,Timberland Bancorp Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Accounting Software
+EEFT,Euronet Worldwide Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Qualified Lead (SQL),CRM
+IMXI,International Money Expr Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Opportunity,Accounting Software
+MA,Mastercard Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Qualified Lead (SQL),Cloud Data Storage
+USIO,Usio Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Qualified Lead (SQL),CRM
+V,Visa Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Qualified Lead (SQL),Chatbot
+WU,Western Union Co,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Marketing Qualified Lead (MQL),CRM
+AGM,Federal Agriculture Mtg Cp,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Marketing Qualified Lead (MQL),Accounting Software
+NAVI,Navient Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,Accounting Software
+AXP,American Express Co,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Qualified Lead (SQL),Cloud Data Storage
+ATLC,Atlanticus Holdings Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Qualified Lead (SQL),Planning Software
+COF,Capital One Financial Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,CRM
+CACC,Credit Acceptance Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,CRM
+CURO,Curo Group Hldgs Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Qualified Lead (SQL),Chatbot
+DFS,Discover Financial Svcs,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,Planning Software
+ENVA,Enova International Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Qualified Lead (SQL),CRM
+LC,Lendingclub Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Unqualified Lead,Chatbot
+NNI,Nelnet Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Accepted Lead (SAL),Cloud Data Storage
+OMF,Onemain Holdings Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,Accounting Software
+OPRT,Oportun Financial Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Unqualified Lead,Cloud Data Storage
+RM,Regional Management Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Marketing Qualified Lead (MQL),CRM
+SLM,Slm Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Marketing Qualified Lead (MQL),CRM
+SYF,Synchrony Financial,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Unqualified Lead,Chatbot
+WRLD,World Acceptance Corp/De,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Unqualified Lead,CRM
+ECPG,Encore Capital Group Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Qualified Lead (SQL),Planning Software
+PRAA,Pra Group Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,Chatbot
+SWKH,Swk Holdings Corp,Financials,Diversified Financials,Diversified Financial Services,Specialized Finance,Sales Qualified Lead (SQL),Accounting Software
+CPSS,Consumer Portfolio Svcs Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Qualified Lead (SQL),Accounting Software
+AIHS,Senmiao Technology,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Sales Accepted Lead (SAL),Cloud Data Storage
+IMH,Impac Mortgage Holdings Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,CRM
+COOP,Mr Cooper Group Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,CRM
+PFSI,Pennymac Financial Services,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Marketing Qualified Lead (MQL),CRM
+SNFCA,Security Natl Finl Cp  -Cl A,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),CRM
+VEL,Velocity Financial Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Accepted Lead (SAL),Accounting Software
+WD,Walker & Dunlop Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Chatbot
+TREE,Lendingtree Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Opportunity,Chatbot
+ALLY,Ally Financial Inc,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Unqualified Lead,Chatbot
+C,Citigroup Inc,Financials,Banks,Banks,Diversified Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+HTH,Hilltop Holdings Inc,Financials,Banks,Banks,Regional Banks,Marketing Qualified Lead (MQL),CRM
+EMO,Clearbridge Eng Midstrm Opp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,CRM
+OXLC,Oxford Lane Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Accounting Software
+NDP,Tortoise Energy Independence,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),CRM
+AC,Associated Capital Group Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Chatbot
+CME,Cme Group Inc,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,Sales Qualified Lead (SQL),Planning Software
+EVR,Evercore Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Opportunity,CRM
+ICE,Intercontinental Exchange,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,Sales Qualified Lead (SQL),Accounting Software
+MKTX,Marketaxess Holdings Inc,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,Unqualified Lead,Planning Software
+NDAQ,Nasdaq Inc,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,Unqualified Lead,Planning Software
+PJT,Pjt Partners Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Sales Accepted Lead (SAL),Planning Software
+SNEX,Stonex Group Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Sales Accepted Lead (SAL),Chatbot
+IDEX,Ideanomics Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Accounting Software
+JEF,Jefferies Financial Grp Inc,Financials,Diversified Financials,Diversified Financial Services,Multi-Sector Holdings,Marketing Qualified Lead (MQL),CRM
+AMP,Ameriprise Financial Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Planning Software
+BGCP,Bgc Partners Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Unqualified Lead,Planning Software
+COHN,Cohen & Company Inc,Financials,Diversified Financials,Capital Markets,Diversified Capital Markets,Sales Qualified Lead (SQL),Planning Software
+FRHC,Freedom Holding Corp,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Sales Qualified Lead (SQL),CRM
+GS,Goldman Sachs Group Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Marketing Qualified Lead (MQL),Accounting Software
+IBKR,Interactive Brokers Group,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Sales Qualified Lead (SQL),CRM
+LPLA,Lpl Financial Holdings Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Unqualified Lead,Planning Software
+MS,Morgan Stanley,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Opportunity,Accounting Software
+OPY,Oppenheimer Holdings Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Unqualified Lead,Chatbot
+PIPR,Piper Sandler Cos,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Opportunity,Chatbot
+RJF,Raymond James Financial Corp,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Opportunity,Accounting Software
+SIEB,Siebert Financial Corp,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Unqualified Lead,Chatbot
+SF,Stifel Financial Corp,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Unqualified Lead,CRM
+AMTD,Td Ameritrade Holding Corp,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Sales Accepted Lead (SAL),Chatbot
+VIRT,Virtu Financial Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Marketing Qualified Lead (MQL),Chatbot
+AMG,Affiliated Managers Grp Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Chatbot
+APO,Apollo Global Mgmt Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Planning Software
+ARES,Ares Management Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),CRM
+APAM,Artisan Partners Asset Mgmt,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+AINC,Ashford Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Accounting Software
+BLK,Blackrock Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,CRM
+BX,Blackstone Group Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),CRM
+BSIG,Brightsphere Invest Grp Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Planning Software
+CG,Carlyle Group Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Accounting Software
+CNS,Cohen & Steers Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Chatbot
+DHIL,Diamond Hill Investment Grp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Accounting Software
+FHI,Federated Hermes Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Planning Software
+FOCS,Focus Financl Prtnr Llc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Accounting Software
+BEN,Franklin Resources Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,CRM
+GHL,Greenhill & Co Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Sales Qualified Lead (SQL),CRM
+HLNE,Hamilton Lane Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Chatbot
+HNNA,Hennessy Advisors Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Planning Software
+HLI,Houlihan Lokey Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Opportunity,Cloud Data Storage
+KKR,Kkr & Co Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),CRM
+MSCI,Msci Inc,Financials,Diversified Financials,Capital Markets,Financial Exchanges & Data,Sales Qualified Lead (SQL),Accounting Software
+TROW,Price (T. Rowe) Group,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,CRM
+SCHW,Schwab (Charles) Corp,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Unqualified Lead,Cloud Data Storage
+SCU,Sculptor Capital Management,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Chatbot
+SEIC,Sei Investments Co,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Chatbot
+SAMG,Silvercrest Asset Mgt,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Accounting Software
+GROW,U S Global Investors Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+VCTR,Victory Cptl Hldgs Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Accounting Software
+VRTS,Virtus Investment Ptnrs Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Accounting Software
+WHG,Westwood Holdings Group Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Cloud Data Storage
+EFC,Ellington Financial Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Qualified Lead (SQL),Accounting Software
+PFG,Principal Financial Grp Inc,Financials,Insurance,Insurance,Life & Health Insurance,Unqualified Lead,Cloud Data Storage
+ENV,Envestnet Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Planning Software
+EQH,Equitable Holdings Inc,Financials,Diversified Financials,Diversified Financial Services,Other Diversified Financial Services,Sales Accepted Lead (SAL),CRM
+VOYA,Voya Financial Inc,Financials,Diversified Financials,Diversified Financial Services,Other Diversified Financial Services,Sales Accepted Lead (SAL),Cloud Data Storage
+AEL,American Eqty Invt Life Hldg,Financials,Insurance,Insurance,Life & Health Insurance,Opportunity,Cloud Data Storage
+BHF,Brighthouse Finanl Inc,Financials,Insurance,Insurance,Life & Health Insurance,Marketing Qualified Lead (MQL),Chatbot
+CIA,Citizens Inc,Financials,Insurance,Insurance,Life & Health Insurance,Unqualified Lead,Chatbot
+GNW,Genworth Financial Inc,Financials,Insurance,Insurance,Life & Health Insurance,Unqualified Lead,Chatbot
+GL,Globe Life Inc,Financials,Insurance,Insurance,Life & Health Insurance,Marketing Qualified Lead (MQL),CRM
+LNC,Lincoln National Corp,Financials,Insurance,Insurance,Life & Health Insurance,Sales Qualified Lead (SQL),Accounting Software
+MET,Metlife Inc,Financials,Insurance,Insurance,Life & Health Insurance,Marketing Qualified Lead (MQL),Chatbot
+NWLI,National Western Life Group,Financials,Insurance,Insurance,Life & Health Insurance,Opportunity,CRM
+PRI,Primerica Inc,Financials,Insurance,Insurance,Life & Health Insurance,Unqualified Lead,Chatbot
+PRU,Prudential Financial Inc,Financials,Insurance,Insurance,Life & Health Insurance,Sales Qualified Lead (SQL),Accounting Software
+RGA,Reinsurance Group Amer Inc,Financials,Insurance,Insurance,Reinsurance,Marketing Qualified Lead (MQL),Planning Software
+VERY,Vericity Inc,Financials,Insurance,Insurance,Life & Health Insurance,Opportunity,Accounting Software
+AFL,Aflac Inc,Financials,Insurance,Insurance,Life & Health Insurance,Opportunity,Planning Software
+AAME,Atlantic American Corp,Financials,Insurance,Insurance,Multi-line Insurance,Sales Qualified Lead (SQL),CRM
+CNO,Cno Financial Group Inc,Financials,Insurance,Insurance,Life & Health Insurance,Opportunity,Planning Software
+UNM,Unum Group,Financials,Insurance,Insurance,Life & Health Insurance,Unqualified Lead,CRM
+TRUP,Trupanion Inc,Financials,Insurance,Insurance,Life & Health Insurance,Sales Qualified Lead (SQL),CRM
+ALL,Allstate Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),CRM
+AFG,American Financial Group Inc,Financials,Insurance,Insurance,Multi-line Insurance,Sales Qualified Lead (SQL),Accounting Software
+AIG,American International Group,Financials,Insurance,Insurance,Multi-line Insurance,Marketing Qualified Lead (MQL),CRM
+AMSF,Amerisafe Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Qualified Lead (SQL),Planning Software
+WRB,Berkley (W R) Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,Chatbot
+CINF,Cincinnati Financial Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Cloud Data Storage
+CNA,Cna Financial Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Planning Software
+CNFR,Conifer Holdings Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,Chatbot
+DGICA,Donegal Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,Cloud Data Storage
+EIG,Employers Holdings Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Accepted Lead (SAL),Cloud Data Storage
+HALL,Hallmark Financial Services,Financials,Insurance,Insurance,Property & Casualty Insurance,Opportunity,Accounting Software
+THG,Hanover Insurance Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,CRM
+HIG,Hartford Financial Services,Financials,Insurance,Insurance,Multi-line Insurance,Marketing Qualified Lead (MQL),Chatbot
+HCI,Hci Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Accepted Lead (SAL),Accounting Software
+HRTG,Heritage Insurance Holdings,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Accepted Lead (SAL),Cloud Data Storage
+HMN,Horace Mann Educators Corp,Financials,Insurance,Insurance,Multi-line Insurance,Sales Accepted Lead (SAL),Accounting Software
+KMPR,Kemper Corp/De,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Qualified Lead (SQL),CRM
+KINS,Kingstone Cos Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Opportunity,Planning Software
+KFS,Kingsway Financial Svcs Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Chatbot
+KNSL,Kinsale Capital Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Accounting Software
+L,Loews Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Chatbot
+MKL,Markel Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,Chatbot
+MCY,Mercury General Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Accepted Lead (SAL),Planning Software
+NODK,Ni Holdings Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Qualified Lead (SQL),Planning Software
+ORI,Old Republic Intl Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Qualified Lead (SQL),Accounting Software
+PLMR,Palomar Holdings Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Accounting Software
+PRA,Proassurance Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,Chatbot
+PGR,Progressive Corp-Ohio,Financials,Insurance,Insurance,Property & Casualty Insurance,Opportunity,Accounting Software
+RLI,Rli Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Accounting Software
+SAFT,Safety Insurance Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,CRM
+SIGI,Selective Ins Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Accounting Software
+TIPT,Tiptree Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Accounting Software
+TRV,Travelers Cos Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Opportunity,Planning Software
+UNAM,Unico American Corp,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),CRM
+UFCS,United Fire Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Opportunity,Chatbot
+UIHC,United Insurance Holdings Co,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Qualified Lead (SQL),Planning Software
+UVE,Universal Insurance Hldgs,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Accepted Lead (SAL),CRM
+MTG,Mgic Investment Corp/Wi,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Opportunity,Accounting Software
+NMIH,Nmi Holdings Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Chatbot
+RDN,Radian Group Inc,Financials,Banks,Thrifts & Mortgage Finance,Thrifts & Mortgage Finance,Sales Qualified Lead (SQL),Planning Software
+AMBC,Ambac Financial Group Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Cloud Data Storage
+AIZ,Assurant Inc,Financials,Insurance,Insurance,Multi-line Insurance,Unqualified Lead,Chatbot
+MBI,Mbia Inc,Financials,Insurance,Insurance,Property & Casualty Insurance,Opportunity,Cloud Data Storage
+FNF,Fidelity Natl Finl Fnf Group,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,CRM
+FAF,First American Financial Cp,Financials,Insurance,Insurance,Property & Casualty Insurance,Sales Accepted Lead (SAL),Cloud Data Storage
+ITIC,Investors Title Co,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Cloud Data Storage
+STC,Stewart Information Services,Financials,Insurance,Insurance,Property & Casualty Insurance,Marketing Qualified Lead (MQL),Accounting Software
+AJG,Arthur J Gallagher & Co,Financials,Insurance,Insurance,Insurance Brokers,Marketing Qualified Lead (MQL),Accounting Software
+BRO,Brown & Brown Inc,Financials,Insurance,Insurance,Insurance Brokers,Opportunity,Chatbot
+BRP,Brp Group Inc,Financials,Insurance,Insurance,Insurance Brokers,Opportunity,Chatbot
+EHTH,Ehealth Inc,Financials,Insurance,Insurance,Insurance Brokers,Marketing Qualified Lead (MQL),Cloud Data Storage
+ERIE,Erie Indemnity Co,Financials,Insurance,Insurance,Property & Casualty Insurance,Unqualified Lead,Planning Software
+GSHD,Goosehead Insurance,Financials,Insurance,Insurance,Insurance Brokers,Marketing Qualified Lead (MQL),Chatbot
+MMC,Marsh & Mclennan Cos,Financials,Insurance,Insurance,Insurance Brokers,Sales Accepted Lead (SAL),Accounting Software
+SLQT,Selectquote Inc,Financials,Insurance,Insurance,Insurance Brokers,Sales Accepted Lead (SAL),Cloud Data Storage
+AAMC,Altisource Asset Mgmt Corp,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Sales Qualified Lead (SQL),Accounting Software
+CBRE,Cbre Group Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Opportunity,Accounting Software
+CTO,Cto Realty Growth Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Opportunity,Cloud Data Storage
+KW,Kennedy-Wilson Holdings Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Qualified Lead (SQL),Accounting Software
+FRPH,Frp Holdings Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Accepted Lead (SAL),Cloud Data Storage
+GYRO,Gyrodyne Llc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Accepted Lead (SAL),Accounting Software
+MAYS,Mays (J.W.) Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Marketing Qualified Lead (MQL),Accounting Software
+RFL,Rafael Holdings Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Accepted Lead (SAL),Accounting Software
+TPHS,Trinity Place Holdings Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Opportunity,Chatbot
+ARL,American Realty Investors,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Accepted Lead (SAL),CRM
+NEN,New England Realty Assc  -Lp,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Qualified Lead (SQL),Accounting Software
+TCI,Transcontinental Rlty Invs,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Sales Accepted Lead (SAL),Accounting Software
+EXPI,Exp World Holdings Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Unqualified Lead,CRM
+JLL,Jones Lang Lasalle Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Sales Accepted Lead (SAL),Planning Software
+MMI,Marcus & Millichap Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Opportunity,Planning Software
+NMRK,Newmark Group Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Unqualified Lead,Accounting Software
+RMAX,Re/Max Holdings Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Sales Qualified Lead (SQL),Planning Software
+RDFN,Redfin Corp,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Services ,Marketing Qualified Lead (MQL),Planning Software
+FPH,Five Point Holdings Llc,Real Estate,Real Estate,Real Estate Management & Development,Diversified Real Estate Activities ,Marketing Qualified Lead (MQL),Planning Software
+FOR,Forestar Group Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Development ,Marketing Qualified Lead (MQL),Cloud Data Storage
+HHC,Howard Hughes Corp,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Development ,Marketing Qualified Lead (MQL),Chatbot
+MLP,Maui Land & Pineapple Co,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Development ,Marketing Qualified Lead (MQL),Accounting Software
+CKX,Ckx Lands Inc,Real Estate,Real Estate,Real Estate Management & Development,Real Estate Operating Companies,Opportunity,Cloud Data Storage
+IDCC,Interdigital Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Accounting Software
+NTIP,Network-1 Technologies Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Chatbot
+DLB,Dolby Laboratories Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Components,Sales Accepted Lead (SAL),Chatbot
+CEVA,Ceva Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Opportunity,CRM
+RMBS,Rambus Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductors,Unqualified Lead,Accounting Software
+TURN,180 Degree Cptl Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,CRM
+ARCC,Ares Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Chatbot
+BCSF,Bain Cap Specialty Fin Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Accounting Software
+BBDC,Barings Bdc Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Accounting Software
+BKCC,Blackrock Capital Invt Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+TCPC,Blackrock Tcp Capital,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),CRM
+EQS,Equus Total Return Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Chatbot
+FDUS,Fidus Investment Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Cloud Data Storage
+SVVC,Firsthand Technology Valu Fd,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Cloud Data Storage
+FSK,Fs Kkr Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Accounting Software
+GLAD,Gladstone Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+GAIN,Gladstone Investment Corp/De,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),CRM
+GSBD,Goldman Sachs Bdc Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Chatbot
+GBDC,Golub Capital Bdc Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Cloud Data Storage
+GECC,Great Elm Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+HTGC,Hercules Capital Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Chatbot
+HRZN,Horizon Technology Finance,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),Accounting Software
+ICMB,Investcorp Crdt Mngmt Bdc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Chatbot
+MAIN,Main Street Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Accounting Software
+MRCC,Monroe Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,CRM
+NMFC,New Mountain Finance Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Accounting Software
+NEWT,Newtek Business Services Cp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Cloud Data Storage
+OFS,Ofs Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),CRM
+PFLT,Pennantpark Floating Rt Cap,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),CRM
+PTMN,Portman Ridge Finance Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,CRM
+PSEC,Prospect Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),CRM
+RAND,Rand Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Chatbot
+SAR,Saratoga Investment Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),CRM
+TSLX,Sixth Street Specialty Lendi,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Qualified Lead (SQL),Chatbot
+SLRC,Solar Capital Ltd,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Cloud Data Storage
+SCM,Stellus Capital Investment,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Opportunity,Planning Software
+SSSS,Suro Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Sales Accepted Lead (SAL),Accounting Software
+TPVG,Triplepoint Venture Gwth Bdc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Cloud Data Storage
+WHF,Whitehorse Finance Inc,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Unqualified Lead,Cloud Data Storage
+MITT,Ag Mortgage Investment Trust,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Qualified Lead (SQL),CRM
+AGNC,Agnc Investment Corp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Accepted Lead (SAL),Chatbot
+NLY,Annaly Capital Management,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Marketing Qualified Lead (MQL),Planning Software
+ARI,Apollo Commercial Re Fin Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,Accounting Software
+ABR,Arbor Realty Trust Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,Planning Software
+ACRE,Ares Commercial Real Estate,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Accepted Lead (SAL),Planning Software
+ARR,Armour Residential Reit Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Marketing Qualified Lead (MQL),CRM
+BXMT,Blackstone Mortgage Tr Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Unqualified Lead,Accounting Software
+BRMK,Broadmark Realty Capital Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Unqualified Lead,CRM
+CHMI,Cherry Hill Mtg Invst,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Unqualified Lead,Planning Software
+CIM,Chimera Investment Corp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Accepted Lead (SAL),Chatbot
+DX,Dynex Capital Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Marketing Qualified Lead (MQL),Cloud Data Storage
+EARN,Ellington Residential Mtg,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,CRM
+GPMT,Granite Point Mortge Trs Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Marketing Qualified Lead (MQL),Accounting Software
+AJX,Great Ajax Corp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Unqualified Lead,Cloud Data Storage
+HASI,Hannon Armstrong Sust Infr,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,Cloud Data Storage
+IVR,Invesco Mortgage Capital Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Accepted Lead (SAL),Accounting Software
+KREF,Kkr Real Estate Fin Tr Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Qualified Lead (SQL),Planning Software
+LADR,Ladder Capital Corp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,CRM
+LOAN,Manhattan Bridge Capital Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Qualified Lead (SQL),CRM
+MFA,Mfa Financial Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Unqualified Lead,Cloud Data Storage
+NYMT,New York Mortgage Trust Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,Accounting Software
+ORC,Orchid Island Capital Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,CRM
+PMT,Pennymac Mortgage Invest Tr,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Qualified Lead (SQL),Planning Software
+RC,Ready Capital Corp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Accepted Lead (SAL),Accounting Software
+RWT,Redwood Trust Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,CRM
+STWD,Starwood Property Trust Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,Accounting Software
+TRTX,Tpg Re Finance Trt Inc,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Qualified Lead (SQL),Cloud Data Storage
+TWO,Two Harbors Investment Corp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Opportunity,Accounting Software
+WMC,Western Asset Mtg Capital Cp,Financials,Diversified Financials,"Mortgage Real Estate Investment 
+Trusts (REITs)",Mortgage REITs,Sales Accepted Lead (SAL),Planning Software
+AKR,Acadia Realty Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Unqualified Lead,Cloud Data Storage
+ADC,Agree Realty Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Opportunity,CRM
+ALEX,Alexander & Baldwin Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Sales Qualified Lead (SQL),Cloud Data Storage
+ALX,Alexander'S Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Opportunity,CRM
+ARE,Alexandria R E Equities Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Accepted Lead (SAL),Accounting Software
+PINE,Alpine Income Property Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Sales Qualified Lead (SQL),Chatbot
+AAT,American Assets Trust Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Sales Accepted Lead (SAL),CRM
+AMH,American Homes 4 Rent,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Opportunity,CRM
+AMT,American Tower Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Marketing Qualified Lead (MQL),Cloud Data Storage
+COLD,Americold Realty Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Unqualified Lead,Chatbot
+AIV,Apartment Invst & Mgmt Co,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Opportunity,Cloud Data Storage
+APLE,Apple Hospitality Reit Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Opportunity,Planning Software
+AHH,Armada Hoffler Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Sales Qualified Lead (SQL),Chatbot
+AHT,Ashford Hospitality Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Marketing Qualified Lead (MQL),Planning Software
+AVB,Avalonbay Communities Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Sales Accepted Lead (SAL),Planning Software
+BXP,Boston Properties Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Unqualified Lead,Chatbot
+BHR,Braemar Hotels & Resorts Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Unqualified Lead,Planning Software
+BDN,Brandywine Realty Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Opportunity,Accounting Software
+BRX,Brixmor Property Group Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Sales Qualified Lead (SQL),CRM
+BRT,Brt Apartments Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Sales Accepted Lead (SAL),Cloud Data Storage
+CPT,Camden Property Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Marketing Qualified Lead (MQL),CRM
+CTRE,Caretrust Reit Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Sales Accepted Lead (SAL),Accounting Software
+CBL,Cbl & Associates Pptys Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Opportunity,Planning Software
+CLDT,Chatham Lodging Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Unqualified Lead,CRM
+CMCT,Cim Commerical Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Qualified Lead (SQL),Accounting Software
+CIO,City Office Reit Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Opportunity,Chatbot
+CLPR,Clipper Realty Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Sales Accepted Lead (SAL),Accounting Software
+CHCT,Community Healthcare Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Sales Qualified Lead (SQL),Cloud Data Storage
+CORR,Corenergy Infrastructure Tr,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),Accounting Software
+OFC,Corporate Office Propert,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Unqualified Lead,CRM
+CUZ,Cousins Properties Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Qualified Lead (SQL),Accounting Software
+CCI,Crown Castle Intl Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),Cloud Data Storage
+CUBE,Cubesmart,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),Planning Software
+DRH,Diamondrock Hospitality Co,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Sales Accepted Lead (SAL),Cloud Data Storage
+DLR,Digital Realty Trust Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),Planning Software
+DHC,Diversified Healthcare Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Marketing Qualified Lead (MQL),Accounting Software
+DEI,Douglas Emmett Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Accepted Lead (SAL),Cloud Data Storage
+DEA,Easterly Government Pptys,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Marketing Qualified Lead (MQL),Planning Software
+EGP,Eastgroup Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Opportunity,Chatbot
+ESRT,Empire State Realty Tr Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Opportunity,Chatbot
+EPR,Epr Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Marketing Qualified Lead (MQL),Cloud Data Storage
+EQIX,Equinix Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),CRM
+EQC,Equity Commonwealth,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Accepted Lead (SAL),CRM
+ELS,Equity Lifestyle Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Marketing Qualified Lead (MQL),Accounting Software
+EQR,Equity Residential,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Sales Qualified Lead (SQL),Chatbot
+EPRT,Essential Ppt Rlty Tst,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Opportunity,CRM
+ESS,Essex Property Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Unqualified Lead,Chatbot
+EXR,Extra Space Storage Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Accounting Software
+FPI,Farmland Partners Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Accounting Software
+FRT,Federal Realty Investment Tr,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Unqualified Lead,CRM
+FR,First Indl Realty Trust Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Sales Qualified Lead (SQL),Accounting Software
+FCPT,Four Corners Property Tr Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Marketing Qualified Lead (MQL),Accounting Software
+FSP,Franklin Street Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Marketing Qualified Lead (MQL),Planning Software
+GLPI,Gaming & Leisure Pptys,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Opportunity,Accounting Software
+GEO,Geo Group Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),CRM
+GTY,Getty Realty Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Sales Accepted Lead (SAL),Cloud Data Storage
+GOOD,Gladstone Commercial Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Sales Accepted Lead (SAL),Chatbot
+LAND,Gladstone Land Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),Chatbot
+GMRE,Global Medical Reit,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Unqualified Lead,Accounting Software
+GNL,Global Net Lease Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Unqualified Lead,Cloud Data Storage
+HR,Healthcare Realty Trust Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Marketing Qualified Lead (MQL),Cloud Data Storage
+PEAK,Healthpeak Properties Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Unqualified Lead,Accounting Software
+HT,Hersha Hospitality Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Sales Qualified Lead (SQL),Chatbot
+HIW,Highwoods Properties Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Qualified Lead (SQL),Planning Software
+HST,Host Hotels & Resorts Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Marketing Qualified Lead (MQL),Chatbot
+HPP,Hudson Pacific Pptys Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Marketing Qualified Lead (MQL),Cloud Data Storage
+IRT,Independence Realty Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Opportunity,Cloud Data Storage
+ILPT,Indstrl Lgst Prpt Trst,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Opportunity,Chatbot
+IIPR,Innovative Industrial Pptys,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Sales Qualified Lead (SQL),Cloud Data Storage
+IHT,Innsuites Hospitality Tr,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Opportunity,CRM
+INVH,Invitation Homes Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Sales Qualified Lead (SQL),Cloud Data Storage
+IRM,Iron Mountain Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Planning Software
+STAR,Istar Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Sales Qualified Lead (SQL),CRM
+JBGS,Jbg Smith Pptys,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Marketing Qualified Lead (MQL),Chatbot
+KRC,Kilroy Realty Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Unqualified Lead,Cloud Data Storage
+KIM,Kimco Realty Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Sales Qualified Lead (SQL),Cloud Data Storage
+LAMR,Lamar Advertising Co  -Cl A,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Cloud Data Storage
+LXP,Lexington Realty Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Sales Accepted Lead (SAL),Cloud Data Storage
+LSI,Life Storage Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Unqualified Lead,Planning Software
+LTC,Ltc Properties Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Opportunity,Cloud Data Storage
+MAC,Macerich Co,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Sales Accepted Lead (SAL),Chatbot
+MDRR,Medalist Divrsfd Reit,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Marketing Qualified Lead (MQL),Planning Software
+MPW,Medical Properties Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Sales Qualified Lead (SQL),Chatbot
+MAA,Mid-America Apt Cmntys Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Unqualified Lead,Planning Software
+NHI,National Health Investors,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Unqualified Lead,Accounting Software
+NNN,National Retail Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Sales Qualified Lead (SQL),Accounting Software
+NSA,National Storage Affiliates,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Opportunity,Accounting Software
+NXRT,Nexpoint Residential Tr Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Residential REITs,Sales Accepted Lead (SAL),Chatbot
+OPI,Office Properties Income Tr,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Unqualified Lead,Accounting Software
+OHI,Omega Healthcare Invs Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Opportunity,CRM
+OLP,One Liberty Properties Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Diversified REITs,Marketing Qualified Lead (MQL),CRM
+OUT,Outfront Media Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Chatbot
+PGRE,Paramount Group Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Sales Qualified Lead (SQL),Cloud Data Storage
+PK,Park Hotels & Resorts,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Opportunity,Chatbot
+PEB,Pebblebrook Hotel Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Opportunity,Accounting Software
+DOC,Physicians Realty Tr,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Sales Accepted Lead (SAL),Planning Software
+PDM,Piedmont Office Realty Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Opportunity,Planning Software
+PLYM,Plymouth Indl Reit Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Sales Accepted Lead (SAL),Chatbot
+PSTL,Postal Realty Trust Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Office REITs ,Unqualified Lead,Planning Software
+PW,Power Reit,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Qualified Lead (SQL),Cloud Data Storage
+PLD,Prologis Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Unqualified Lead,Chatbot
+PSA,Public Storage,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Unqualified Lead,Cloud Data Storage
+RYN,Rayonier Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Marketing Qualified Lead (MQL),CRM
+O,Realty Income Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Marketing Qualified Lead (MQL),CRM
+REG,Regency Centers Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Unqualified Lead,Planning Software
+ROIC,Retail Opportunity Invts Cp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Unqualified Lead,Cloud Data Storage
+REXR,Rexford Indus Realty,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Industrial REITs,Unqualified Lead,Chatbot
+RLJ,Rlj Lodging Trust,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Marketing Qualified Lead (MQL),Accounting Software
+RPT,Rpt Realty,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Unqualified Lead,Accounting Software
+RHP,Ryman Hospitality Pptys Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Hotel & Resort REITs ,Sales Qualified Lead (SQL),Cloud Data Storage
+SBRA,Sabra Health Care Reit Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Health Care REITs ,Marketing Qualified Lead (MQL),Chatbot
+SAFE,Safehold Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Unqualified Lead,Accounting Software
+BFS,Saul Centers Inc,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Marketing Qualified Lead (MQL),Chatbot
+SBAC,Sba Communications Corp,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Specialized REITs ,Sales Accepted Lead (SAL),Accounting Software
+SRG,Seritage Growth Properties,Real Estate,Real Estate,"Equity Real Estate 
+Investment Trusts 
+(REITs)",Retail REITs,Sales Accepted Lead (SAL),Cloud Data Storage
+DOCU,Docusign Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Cloud Data Storage
+DOMO,Domo Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Planning Software
+DBX,Dropbox Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Chatbot
+DT,Dynatrace Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Cloud Data Storage
+EGAN,Egain Corp,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Planning Software
+EVBG,Everbridge Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Accounting Software
+FIVN,Five9 Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Accounting Software
+HUBS,Hubspot Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),CRM
+INUV,Inuvo Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Cloud Data Storage
+ISDR,Issuer Direct Corp,Information Technology,Software & Services,Software,Application Software,Opportunity,Cloud Data Storage
+KLR,Kaleyra Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Cloud Data Storage
+LPSN,Liveperson Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Cloud Data Storage
+MRIN,Marin Software Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Cloud Data Storage
+MODN,Model N Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),CRM
+NEWR,New Relic Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Chatbot
+NTNX,Nutanix Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Accounting Software
+OBLG,Oblong Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Planning Software
+ORCL,Oracle Corp,Information Technology,Software & Services,Software,Systems Software,Opportunity,Planning Software
+PD,Pagerduty Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Planning Software
+PANW,Palo Alto Networks Inc,Information Technology,Software & Services,Software,Systems Software,Marketing Qualified Lead (MQL),Chatbot
+PAYC,Paycom Software Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),CRM
+SPSC,Sps Commerce Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Planning Software
+SNCR,Synchronoss Technologies,Information Technology,Software & Services,Software,Application Software,Opportunity,Accounting Software
+TENB,Tenable Holdings Inc,Information Technology,Software & Services,Software,Systems Software,Marketing Qualified Lead (MQL),Chatbot
+TDC,Teradata Corp,Information Technology,Software & Services,Software,Systems Software,Opportunity,Chatbot
+TTD,Trade Desk Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Planning Software
+UPLD,Upland Software Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Planning Software
+VERB,Verb Technology Co Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Cloud Data Storage
+VERI,Veritone Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Cloud Data Storage
+WDAY,Workday Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Cloud Data Storage
+WK,Workiva Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Planning Software
+YEXT,Yext Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Planning Software
+ZM,Zoom Video Comunications Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Planning Software
+ZS,Zscaler Inc,Information Technology,Software & Services,Software,Systems Software,Opportunity,Planning Software
+ZUO,Zuora Inc,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),Chatbot
+NCR,Ncr Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Accounting Software
+PDFS,Pdf Solutions Inc,Information Technology,Semiconductors & Semiconductor Equipment,Semiconductors & Semiconductor Equipment,Semiconductor Equipment ,Unqualified Lead,Planning Software
+BAND,Bandwidth Inc,Communication Services,Telecommunication Services,Diversified Telecommunication Services,Alternative Carriers,Marketing Qualified Lead (MQL),Cloud Data Storage
+CDLX,Cardlytics Inc,Communication Services,Media & Entertainment,Media,Advertising,Unqualified Lead,Chatbot
+SCOR,Comscore Inc,Communication Services,Media & Entertainment,Media,Advertising,Sales Accepted Lead (SAL),Planning Software
+TTGT,Techtarget Inc,Communication Services,Media & Entertainment,Media,Advertising,Sales Qualified Lead (SQL),Planning Software
+GAIA,Gaia Inc,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Opportunity,Accounting Software
+GOOGL,Alphabet Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Unqualified Lead,Accounting Software
+ANGI,Angi Homeservices Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Qualified Lead (SQL),CRM
+CARG,Cargurus Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),Planning Software
+CARS,Cars.Com Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Qualified Lead (SQL),Chatbot
+EB,Eventbrite Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),Cloud Data Storage
+EVER,Everquote Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),Chatbot
+META,Facebook Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Unqualified Lead,Cloud Data Storage
+IZEA,Izea Worldwide Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Marketing Qualified Lead (MQL),Accounting Software
+LTRPA,Liberty Tripadvisor Holdings,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),CRM
+MTCH,Match Group Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Opportunity,Chatbot
+PINS,Pinterest Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Marketing Qualified Lead (MQL),CRM
+IPDN,Professional Diversity Netwk,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Qualified Lead (SQL),CRM
+QNST,Quinstreet Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),Planning Software
+SNAP,Snap Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),Accounting Software
+SLGG,Super League Gaming Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Qualified Lead (SQL),Cloud Data Storage
+TKAT,Takung Art Co Ltd,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Marketing Qualified Lead (MQL),Accounting Software
+TZOO,Travelzoo,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Unqualified Lead,Accounting Software
+TRIP,Tripadvisor Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Unqualified Lead,Cloud Data Storage
+CDNS,Cadence Design Systems Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),CRM
+CRNC,Cerence Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Chatbot
+APPS,Digital Turbine Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Cloud Data Storage
+EBIX,Ebix Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Cloud Data Storage
+GWRE,Guidewire Software Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Planning Software
+INTU,Intuit Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Cloud Data Storage
+MSFT,Microsoft Corp,Information Technology,Software & Services,Software,Systems Software,Sales Qualified Lead (SQL),CRM
+MSTR,Microstrategy Inc,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Cloud Data Storage
+NTWK,Netsol Technologies Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Cloud Data Storage
+PCYG,Park City Group Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Cloud Data Storage
+PEGA,Pegasystems Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Chatbot
+PTC,Ptc Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Planning Software
+QLYS,Qualys Inc,Information Technology,Software & Services,Software,Systems Software,Opportunity,Planning Software
+RPD,Rapid7 Inc,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),Cloud Data Storage
+CRM,Salesforce.Com Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Chatbot
+SEAC,Seachange International Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Cloud Data Storage
+SCWX,Secureworks Corp,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),Chatbot
+NOW,Servicenow Inc,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),CRM
+SMSI,Smith Micro Software Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),Accounting Software
+SWI,Solarwinds Corp,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),Cloud Data Storage
+SPLK,Splunk Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Planning Software
+SSNC,Ss&C Technologies Hldgs Inc,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Planning Software
+SNPS,Synopsys Inc,Information Technology,Software & Services,Software,Application Software,Opportunity,Chatbot
+VRNS,Varonis Systems Inc,Information Technology,Software & Services,Software,Systems Software,Sales Qualified Lead (SQL),CRM
+VHC,Virnetx Holding Corp,Information Technology,Software & Services,Software,Application Software,Sales Accepted Lead (SAL),Accounting Software
+IMMR,Immersion Corp,Information Technology,Technology Hardware & Equipment,"Technology Hardware, Storage & Peripherals","Technology Hardware, Storage & Peripherals",Opportunity,Chatbot
+NATI,National Instruments Corp,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Marketing Qualified Lead (MQL),Cloud Data Storage
+CREX,Creative Realities Inc,Communication Services,Media & Entertainment,Media,Advertising,Marketing Qualified Lead (MQL),CRM
+DJCO,Daily Journal Corp,Communication Services,Media & Entertainment,Media,Publishing,Sales Accepted Lead (SAL),Cloud Data Storage
+LBRDK,Liberty Broadband Corp,Communication Services,Media & Entertainment,Media,Cable & Satellite,Marketing Qualified Lead (MQL),Accounting Software
+ATVI,Activision Blizzard Inc,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,Marketing Qualified Lead (MQL),Planning Software
+EA,Electronic Arts Inc,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,Sales Accepted Lead (SAL),CRM
+SCPL,Sciplay Corp,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,Opportunity,Accounting Software
+TTWO,Take-Two Interactive Sftwr,Communication Services,Media & Entertainment,Entertainment,Interactive Home Entertainment,Unqualified Lead,CRM
+ZDGE,Zedge Inc,Communication Services,Media & Entertainment,Interactive Media & Services,Interactive Media & Services,Sales Accepted Lead (SAL),Chatbot
+BR,Broadridge Financial Solutns,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Marketing Qualified Lead (MQL),Accounting Software
+CACI,Caci Intl Inc  -Cl A,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Opportunity,Planning Software
+CSPI,Csp Inc,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Opportunity,Cloud Data Storage
+JKHY,Henry (Jack) & Associates,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Unqualified Lead,Cloud Data Storage
+LDOS,Leidos Holdings Inc,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Marketing Qualified Lead (MQL),Cloud Data Storage
+SAIC,Science Applications Intl Cp,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Opportunity,Planning Software
+UIS,Unisys Corp,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Opportunity,Cloud Data Storage
+FICO,Fair Isaac Corp,Information Technology,Software & Services,Software,Application Software,Sales Qualified Lead (SQL),Planning Software
+MANH,Manhattan Associates Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Chatbot
+TYL,Tyler Technologies Inc,Information Technology,Software & Services,Software,Application Software,Marketing Qualified Lead (MQL),CRM
+VRNT,Verint Systems Inc,Information Technology,Software & Services,Software,Application Software,Unqualified Lead,Cloud Data Storage
+VMW,Vmware Inc -Cl A,Information Technology,Software & Services,Software,Systems Software,Sales Accepted Lead (SAL),Accounting Software
+FFIV,F5 Networks Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Chatbot
+NTCT,Netscout Systems Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Marketing Qualified Lead (MQL),Cloud Data Storage
+RBBN,Ribbon Communications Inc,Information Technology,Technology Hardware & Equipment,Communications Equipment,Communications Equipment,Sales Qualified Lead (SQL),Cloud Data Storage
+ADP,Automatic Data Processing,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Opportunity,Cloud Data Storage
+BKI,Black Knight Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Qualified Lead (SQL),Accounting Software
+CSGS,Csg Systems Intl Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Unqualified Lead,Planning Software
+EVTC,Evertec Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Opportunity,CRM
+PAYS,Paysign Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Marketing Qualified Lead (MQL),Chatbot
+PFSW,Pfsweb Inc,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Marketing Qualified Lead (MQL),Cloud Data Storage
+PRTH,Priority Technlgy Hldngs Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Marketing Qualified Lead (MQL),Planning Software
+RPAY,Repay Holdings Corp,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Opportunity,Cloud Data Storage
+SQ,Square Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Marketing Qualified Lead (MQL),Cloud Data Storage
+STCN,Steel Connect Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Accepted Lead (SAL),Planning Software
+VRRM,Verra Mobility Corp,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Accepted Lead (SAL),CRM
+WEX,Wex Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Marketing Qualified Lead (MQL),CRM
+GDOT,Green Dot Corp,Financials,Diversified Financials,Consumer Finance,Consumer Finance,Marketing Qualified Lead (MQL),CRM
+RILY,B. Riley Financial Inc,Financials,Diversified Financials,Capital Markets,Investment Banking & Brokerage,Marketing Qualified Lead (MQL),Planning Software
+CASS,Cass Information Systems Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Accepted Lead (SAL),Cloud Data Storage
+SRT,Startek Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Accepted Lead (SAL),CRM
+TTEC,Ttec Holdings Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Opportunity,Chatbot
+EEX,Emerald Holding Inc,Communication Services,Media & Entertainment,Media,Advertising,Marketing Qualified Lead (MQL),Chatbot
+MCHX,Marchex Inc,Communication Services,Media & Entertainment,Media,Advertising,Sales Accepted Lead (SAL),Cloud Data Storage
+SGRP,Spar Group Inc,Communication Services,Media & Entertainment,Media,Advertising,Sales Accepted Lead (SAL),Chatbot
+CSSE,Chicken Soup For Soul Entnt,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Opportunity,Accounting Software
+WWE,World Wrestling Entmt Inc,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Marketing Qualified Lead (MQL),Accounting Software
+CIDM,Cinedigm Corp,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Accepted Lead (SAL),Cloud Data Storage
+AMC,Amc Entertainment Holdings,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Accepted Lead (SAL),CRM
+CNK,Cinemark Holdings Inc,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Unqualified Lead,Chatbot
+MCS,Marcus Corp,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Marketing Qualified Lead (MQL),Cloud Data Storage
+RDI,Reading Intl Inc  -Cl A,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Accepted Lead (SAL),Planning Software
+NFLX,Netflix Inc,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Qualified Lead (SQL),Chatbot
+BATRK,Liberty Media Braves Group,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Qualified Lead (SQL),Accounting Software
+LYV,Live Nation Entertainment,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Marketing Qualified Lead (MQL),CRM
+MSGE,Madison Square Gard Ent,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Marketing Qualified Lead (MQL),Cloud Data Storage
+MSGS,Madison Square Garden Sports,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Accepted Lead (SAL),Cloud Data Storage
+IT,Gartner Inc,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Opportunity,Accounting Software
+DLPN,Dolphin Entertainment Inc,Communication Services,Media & Entertainment,Entertainment,Movies & Entertainment,Sales Accepted Lead (SAL),CRM
+CETX,Cemtrex Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Manufacturing Services,Unqualified Lead,CRM
+ITI,Iteris Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Unqualified Lead,CRM
+PAYX,Paychex Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Unqualified Lead,Cloud Data Storage
+REFR,Research Frontiers Inc,Information Technology,Technology Hardware & Equipment,"Electronic Equipment, Instruments & Components",Electronic Equipment & Instruments ,Opportunity,Accounting Software
+GRNQ,Greenpro Capital Corp,Financials,Diversified Financials,Capital Markets,Asset Management & Custody Banks,Marketing Qualified Lead (MQL),CRM
+MMS,Maximus Inc,Information Technology,Software & Services,IT Services,Data Processing & Outsourced Services,Sales Accepted Lead (SAL),Accounting Software
+RMR,Rmr Group Inc,Real Estate,Real Estate,Real Estate Management & Development,Diversified Real Estate Activities ,Sales Qualified Lead (SQL),Cloud Data Storage
+HCKT,Hackett Group Inc,Information Technology,Software & Services,IT Services,IT Consulting & Other Services,Sales Accepted Lead (SAL),Chatbot
