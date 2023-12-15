@@ -1,5 +1,5 @@
 import pandas as pd
-import snowflake.connector
+#import snowflake.connector
 import streamlit as st
 from streamlit_dynamic_filters import DynamicFilters
 from st_aggrid import AgGrid
@@ -312,7 +312,7 @@ def no_data_plot():
     return fig
 
 
-conn = st.connection("snowflake")
+#conn = st.connection("snowflake")
 #df = conn.query("SELECT * from prospects LIMIT 1000;", ttl=600)
 df = pd.read_csv('prospects.csv')
 
