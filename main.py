@@ -165,10 +165,10 @@ def get_financials(df, col_name, metric_name):
     return metric_df
 
 
-def generate_gpt_response(gpt_input, max_tokens):
+def generate_gpt_response(gpt_input, max_tokens, api_key, llm_model):
     """function to generate a response from GPT-3. Takes input and max tokens as arguments and returns a response"""
     # Create an instance of the OpenAI class
-    chat = ChatOpenAI(openai_api_key=st.secrets["openai_credentials"]["API_KEY"], model='gpt-3.5-turbo-0613',
+    chat = ChatOpenAI(openai_api_key=api_key, model=llm_model,
                       temperature=0, max_tokens=max_tokens)
 
     # Generate a response from the model
@@ -319,6 +319,10 @@ df = pd.read_csv('prospects.csv')
 # Fix column names. Replace underscore with space, lowercase column names, and capitalize first words
 df.columns = df.columns.str.replace('_', ' ').str.lower().str.title()
 
+with st.sidebar:
+    openai_key = st.text_input(label="Your OpenAI API key", help="Your API key is not stored anywhere")
+    llm_model = st.selectbox(label="Choose a model", options=["gpt-3.5-turbo", "gpt-4-turbo", "gpt-4"])
+
 # create sidebar filters
 st.sidebar.write('**Use filters to select prospects** 👇')
 
@@ -403,6 +407,10 @@ response_df = pd.DataFrame(response["selected_rows"])
 if submit and response_df.empty:
     with ui_container:
         st.warning("Please select a prospect!")
+
+elif submit and openai_key == "":
+    with ui_container:
+        st.warning("Please input your OpenAI API key")
 
 # if user input is not empty and button is clicked then generate slides
 elif submit and response_df is not None:
@@ -536,7 +544,7 @@ elif submit and response_df is not None:
                 input_competitors = input_competitors.format(name, selected_ticker)
 
                 # return response from GPT-3
-                gpt_comp_response = generate_gpt_response(gpt_input=input_competitors, max_tokens=250)
+                gpt_comp_response = generate_gpt_response(gpt_input=input_competitors, max_tokens=250, api_key=openai_key, llm_model=llm_model)
 
                 # extract dictionary from response
                 peers_dict = dict_from_string(gpt_comp_response)
@@ -632,7 +640,7 @@ elif submit and response_df is not None:
                 """
                 
                 # return response from GPT-3
-                gpt_swot = generate_gpt_response(input_swot, 1000)
+                gpt_swot = generate_gpt_response(gpt_input=input_swot, max_tokens=1000, api_key=openai_key, llm_model=llm_model)
 
                 # extract dictionary from response
                 swot_dict = dict_from_string(gpt_swot)
@@ -662,7 +670,7 @@ elif submit and response_df is not None:
                 input_vp = input_vp.format(product=product, name=name, ticker=selected_ticker, industry=industry)
 
                 # return response from GPT-3
-                gpt_value_prop = generate_gpt_response(input_vp, 1000)
+                gpt_value_prop = generate_gpt_response(gpt_input=input_vp, max_tokens=1000, api_key=openai_key, llm_model=llm_model)
 
                 # extract dictionary from response
                 value_prop_dict = dict_from_string(gpt_value_prop)
