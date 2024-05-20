@@ -321,7 +321,7 @@ df.columns = df.columns.str.replace('_', ' ').str.lower().str.title()
 
 with st.sidebar:
     openai_key = st.text_input(label="Your OpenAI API key", help="Your API key is not stored anywhere")
-    llm_model = st.selectbox(label="Choose a model", options=["gpt-3.5-turbo", "gpt-4-turbo", "gpt-4"])
+    llm_model = st.selectbox(label="Choose a model", options=["gpt-3.5-turbo", "gpt-4-turbo", "gpt-4", "gpt-4o"])
 
 # create sidebar filters
 st.sidebar.write('**Use filters to select prospects** 👇')
