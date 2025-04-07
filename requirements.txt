@@ -15,5 +15,5 @@ langchain
 langchain-community
 langchain-core
 snowflake-snowpark-python
-pyarrow==10.0.1
+pyarrow
 
